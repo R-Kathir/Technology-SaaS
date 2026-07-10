@@ -6,17 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stackly | Login</title>
 
-    <!-- Google Font -->
+     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
 
-    <!-- Font Awesome -->
+     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
-    <!-- CSS -->
+     
     <link rel="stylesheet" href="login.css">
 
 </head>
@@ -28,7 +28,7 @@
     </a>
     <section class="login-page">
 
-        <!-- Background -->
+         
 
         <div class="bg-grid"></div>
 
@@ -273,20 +273,14 @@
                             <span>or continue with</span>
                         </div>
                         <div class="social-login">
-                            <button class="social-btn">
+                            <button onclick="window.location.href='404page.html'" class="social-btn">
                                 <i class="fa-brands fa-google"></i>
                                 Google
                             </button>
-                            <button class="social-btn">
+                            <button onclick="window.location.href='404page.html'" class="social-btn">
                                 <i class="fa-brands fa-github"></i>
                                 GitHub
                             </button>
-                        </div>
-                        <div class="signup-text">
-                            Don't have an account?
-                            <a href="404page.html">
-                                Create Account
-                            </a>
                         </div>
                     </div>
                 </div>
@@ -304,7 +298,7 @@
 
         const loginForm = document.querySelector(".login-form");
         const signupForm = document.querySelector(".signup-form");
-        // Initial Form State
+ 
         loginForm.style.display = "flex";
         loginForm.style.opacity = "1";
         loginForm.style.transform = "translateX(0)";
@@ -376,7 +370,7 @@
         };
         gsap.registerPlugin(ScrollTrigger);
 
-        // Hero Content
+ 
         const tl = gsap.timeline();
 
         tl.from(".logo", {
@@ -427,9 +421,9 @@
             ease: "power4.out"
         }, "-=1");
 
-        //==================================================
-        // Floating Dashboard
-        //==================================================
+ 
+ 
+ 
 
         gsap.to(".dashboard-preview", {
             y: -12,
@@ -439,9 +433,9 @@
             ease: "sine.inOut"
         });
 
-        //==================================================
-        // Floating Background
-        //==================================================
+ 
+ 
+ 
 
         gsap.to(".circle1", {
             x: 40,
@@ -501,9 +495,9 @@
         });
 
 
-        //==================================================
-        // Input Animation
-        //==================================================
+ 
+ 
+ 
 
         document.querySelectorAll(".input-box input")
             .forEach(input => {
@@ -621,9 +615,9 @@
             });
 
         }
-        //==================================================
-        // Shake Animation
-        //==================================================
+ 
+ 
+ 
 
         function shake(element) {
 
@@ -648,9 +642,9 @@
         }
 
 
-        //==================================================
-        // Loading Button
-        //==================================================
+ 
+ 
+ 
 
         function loginLoading() {
 
@@ -694,9 +688,9 @@
         }
 
 
-        //==================================================
-        // Social Buttons
-        //==================================================
+ 
+ 
+ 
 
         document.querySelectorAll(".social-btn")
             .forEach(btn => {
@@ -722,9 +716,9 @@
             });
 
 
-        //==================================================
-        // Button Hover
-        //==================================================
+ 
+ 
+ 
 
         gsap.utils.toArray(".login-btn")
             .forEach(btn => {
@@ -900,7 +894,7 @@
 
                 alert("Account Created Successfully!");
 
-                // window.location="dashboard.html";
+ 
 
             }, 2000);
 

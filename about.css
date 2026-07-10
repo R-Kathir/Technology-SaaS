@@ -60,10 +60,10 @@
 
 }
 
-/* ==================== MISSION & VISION SECTION ==================== */
+ 
 .mission-vision-section {
     background-color: #0A0B0E;
-    /* Deepest dark for maximum contrast */
+     
     position: relative;
     overflow: hidden;
 }
@@ -76,11 +76,11 @@
     z-index: 2;
 }
 
-/* --- Premium Cards --- */
+ 
 .mv-card {
     position: relative;
     background-color: rgba(255, 255, 255, 0.03);
-    /* Subtle glass background */
+     
     border: 1px solid rgba(255, 255, 255, 0.08);
     border-radius: 24px;
     padding: 4rem 3rem;
@@ -97,7 +97,7 @@
     border-color: rgba(255, 255, 255, 0.15);
 }
 
-/* --- Ambient Glows --- */
+ 
 .mv-glow {
     position: absolute;
     top: -30%;
@@ -113,7 +113,7 @@
 
 .mv-card:hover .mv-glow {
     opacity: 0.8;
-    /* Glow intensifies on hover */
+     
 }
 
 .glow-cyan {
@@ -124,7 +124,7 @@
     background: radial-gradient(circle, var(--clr-primary, #F27622) 0%, transparent 70%);
 }
 
-/* --- Content Styling --- */
+ 
 .mv-icon {
     width: 64px;
     height: 64px;
@@ -155,7 +155,7 @@
     margin: 0;
 }
 
-/* Mobile Responsiveness */
+ 
 @media (max-width: 992px) {
     .mv-grid {
         grid-template-columns: 1fr;
@@ -167,7 +167,7 @@
     }
 }
 
-/* ==================== JOURNEY TIMELINE SECTION (LIGHT) ==================== */
+ 
 .journey-section {
     background-color: var(--clr-bg-base, #FFFFFF);
     position: relative;
@@ -181,7 +181,7 @@
     padding: 2rem 0;
 }
 
-/* The Central Vertical Line */
+ 
 .timeline-line {
     position: absolute;
     top: 0;
@@ -189,13 +189,13 @@
     transform: translateX(-50%);
     width: 2px;
     height: 100%;
-    /* Keep the cyan gradient, but adapted for a light background */
+     
     background: linear-gradient(to bottom, transparent, var(--clr-cyan, #00E5FF) 15%, var(--clr-cyan, #00E5FF) 85%, transparent);
     z-index: 1;
     transform-origin: top;
 }
 
-/* Base Item Setup */
+ 
 .timeline-item {
     position: relative;
     width: 50%;
@@ -213,19 +213,19 @@
     text-align: left;
 }
 
-/* The Connecting Dots */
+ 
 .timeline-dot {
     position: absolute;
     top: 2.5rem;
     width: 20px;
     height: 20px;
     background-color: #FFFFFF;
-    /* Solid white inside */
+     
     border: 4px solid var(--clr-cyan, #00E5FF);
     border-radius: 50%;
     z-index: 3;
     box-shadow: 0 0 10px rgba(0, 229, 255, 0.2);
-    /* Softer, lighter glow */
+     
 }
 
 .timeline-item.left .timeline-dot {
@@ -236,33 +236,33 @@
     left: -10px;
 }
 
-/* The Content Cards (Light Mode) */
+ 
 .timeline-content {
     background-color: #FFFFFF;
     border: 1px solid var(--clr-border-subtle, #EAEAEA);
-    /* Very light gray border */
+     
     border-radius: 16px;
     padding: 2rem;
     box-shadow: var(--shadow-sm, 0 4px 15px rgba(0, 0, 0, 0.04));
-    /* Soft drop shadow */
+     
     transition: transform var(--transition-smooth), box-shadow var(--transition-smooth), border-color var(--transition-smooth);
 }
 
 .timeline-content:hover {
     transform: translateY(-5px);
     box-shadow: var(--shadow-md, 0 12px 30px rgba(0, 0, 0, 0.08));
-    /* Deeper shadow on hover */
+     
     border-color: var(--clr-cyan, #00E5FF);
 }
 
-/* Typography Overrides for Light Mode */
+ 
 .timeline-date {
     display: inline-block;
     font-family: var(--font-secondary);
     font-size: 0.85rem;
     font-weight: 700;
     color: #0096A6;
-    /* Darker cyan for contrast against white */
+     
     text-transform: uppercase;
     letter-spacing: 1px;
     margin-bottom: 0.75rem;
@@ -284,7 +284,7 @@
     margin: 0;
 }
 
-/* --- Mobile Responsiveness --- */
+ 
 @media (max-width: 992px) {
     .timeline-line {
         left: 20px;
@@ -308,18 +308,18 @@
     }
 }
 
-/* ==================== STATS SECTION ==================== */
+ 
 .hero-stats {
     background-color: #050505;
-    /* Deep black background matching the image */
+     
     color: #FFFFFF;
     border-top: 1px solid rgba(255, 255, 255, 0.05);
-    /* Subtle separation line */
+     
 }
 
 .stats-header {
     max-width: 800px;
-    /* Keeps the text from stretching too far on wide screens */
+     
 }
 
 .stats-header .sec-head {
@@ -331,12 +331,12 @@
 
 .stats-header .sec-desc {
     color: #A0AEC0;
-    /* Muted gray for secondary text */
+     
     font-size: 1.1rem;
     line-height: 1.6;
 }
 
-/* --- The Number Grid --- */
+ 
 .stats-grid {
     display: flex;
     justify-content: space-between;
@@ -352,7 +352,7 @@
 .stat-num {
     font-family: var(--font-secondary);
     font-size: 4.5rem;
-    /* Large, high-impact numbers */
+     
     font-weight: 700;
     line-height: 1;
     margin-bottom: 1rem;
@@ -362,11 +362,11 @@
 .stat-label {
     font-size: 1.1rem;
     color: #E2E8F0;
-    /* Slightly brighter than the description text */
+     
     font-weight: 400;
 }
 
-/* Mobile Responsiveness */
+ 
 @media (max-width: 768px) {
     .stats-header .sec-head {
         font-size: 2rem;
@@ -382,7 +382,7 @@
     }
 }
 
-/* ==================== CORE VALUES SECTION ==================== */
+ 
 .core-values {
     background-color: var(--clr-bg-base, #FFFFFF);
     overflow: hidden;
@@ -392,32 +392,32 @@
     display: flex;
     flex-direction: column;
     gap: 6rem;
-    /* Large spacing between value blocks */
+     
     margin-top: 4rem;
 }
 
-/* Flexbox Row Setup */
+ 
 .value-row {
     display: flex;
     align-items: center;
     gap: 4rem;
 }
 
-/* The Magic Class: Reverses the layout for alternating rows */
+ 
 .value-row.rev-row {
     flex-direction: row-reverse;
 }
 
-/* Image Container */
+ 
 .value-image {
     flex: 1;
-    /* Takes up 50% of the row */
+     
     border-radius: 24px;
     overflow: hidden;
     position: relative;
     aspect-ratio: 4/3;
     background-color: #F0F0F5;
-    /* Placeholder color */
+     
 }
 
 .value-image img {
@@ -429,13 +429,13 @@
 
 .value-row:hover .value-image img {
     transform: scale(1.05);
-    /* Subtle zoom on hover */
+     
 }
 
-/* Text Content */
+ 
 .value-content {
     flex: 1;
-    /* Takes up 50% of the row */
+     
     padding: 2rem 0;
 }
 
@@ -462,13 +462,13 @@
     margin: 0;
 }
 
-/* --- Mobile Responsiveness --- */
+ 
 @media (max-width: 992px) {
     .values-wrapper {
         gap: 4rem;
     }
 
-    /* Forces all rows to stack vertically on small screens */
+     
     .value-row,
     .value-row.rev-row {
         flex-direction: column;
@@ -490,11 +490,11 @@
     }
 }
 
-/* ==================== TRUSTED COMPANIES (LIGHT) ==================== */
+ 
 .trusted-section {
     background-color: var(--clr-bg-base, #FFFFFF);
     overflow: hidden;
-    /* Crucial for marquee */
+     
     border-top: 1px solid var(--clr-border-subtle, #EAEAEA);
     border-bottom: 1px solid var(--clr-border-subtle, #EAEAEA);
 }
@@ -516,7 +516,7 @@
     overflow: hidden;
 }
 
-/* Gradient fades on the edges of the marquee */
+ 
 .marquee-wrapper::before,
 .marquee-wrapper::after {
     content: "";
@@ -540,7 +540,7 @@
 .marquee-track {
     display: flex;
     width: calc(200px * 12);
-    /* Width of all items */
+     
     animation: scrollMarquee 30s linear infinite;
 }
 
@@ -552,7 +552,7 @@
     font-size: 1.5rem;
     font-weight: 700;
     color: #C0C0C0;
-    /* Muted logo color */
+     
 }
 
 @keyframes scrollMarquee {
@@ -564,26 +564,26 @@
         transform: translateX(calc(-200px * 6));
     }
 
-    /* Translates half the track */
+     
 }
 
 
-/* ==================== TEAM SECTION (DARK PINNED SCROLL) ==================== */
+ 
 .team-pinned-section {
     background-color: var(--clr-bg-navbar, #141518);
     overflow: hidden;
     padding: 0;
-    /* Let ScrollTrigger handle height */
+     
 }
 
 .pinned-container {
     height: 100vh;
-    /* Takes up full screen while pinned */
+     
     display: flex;
     align-items: center;
 }
 
-/* Left Side - Static Text */
+ 
 .pinned-left {
     width: 40%;
     padding-left: 5%;
@@ -610,26 +610,26 @@
     margin-bottom: 2.5rem;
 }
 
-/* Right Side - Scrolling Track */
+ 
 .pinned-right {
     width: 60%;
     height: 100%;
     display: flex;
     align-items: center;
-    /* z-index: 1; */
+     
 }
 
 .horizontal-scroll-track {
     display: flex;
     gap: 3rem;
     padding-right: 10vw;
-    /* Spacing at the end of the scroll */
+     
 }
 
-/* Dark Team Cards */
+ 
 .team-card-dark {
     width: 350px;
-    /* Fixed width for horizontal scrolling */
+     
     flex-shrink: 0;
     background-color: rgba(255, 255, 255, 0.03);
     border: 1px solid rgba(255, 255, 255, 0.08);
@@ -640,13 +640,13 @@
 
 .team-card-dark:hover {
     border-color: rgba(0, 229, 255, 0.3);
-    /* Cyan hover hint */
+     
 }
 
 .team-card-dark .team-img-wrapper {
     width: 100%;
     aspect-ratio: 1/1;
-    /* Square portrait style */
+     
 }
 
 .team-card-dark .team-img-wrapper img {
@@ -654,7 +654,7 @@
     height: 100%;
     object-fit: cover;
     filter: grayscale(20%) contrast(1.1);
-    /* Stylized dark mode photo treatment */
+     
 }
 
 .team-card-dark .team-info {
@@ -680,7 +680,7 @@
     flex-shrink: 0;
 }
 
-/* Mobile Responsiveness (Disables pinned scroll and stacks naturally) */
+ 
 @media (max-width: 992px) {
     .pinned-container {
         height: auto;
@@ -701,7 +701,7 @@
 
     .horizontal-scroll-track {
         flex-direction: column;
-        /* Stack vertically on mobile */
+         
         width: 100%;
         padding: 0;
         gap: 2rem;

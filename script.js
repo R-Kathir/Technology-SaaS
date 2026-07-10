@@ -1,17 +1,17 @@
 gsap.registerPlugin(ScrollTrigger);
-// Ensure GSAP is loaded
+ 
 
 const innerHeroTimeline = gsap.timeline({ delay: 0.1 });
 
-// 1. Animate the Background Image (Slow zoom out)
+ 
 innerHeroTimeline.from(".hero-bg-img", {
     scale: 1.15,
     duration: 2.5,
     ease: "power2.out"
 });
 
-// 2. Stagger the content in (Breadcrumbs -> H1 -> P)
-// The "-=2" means this starts 2 seconds BEFORE the background image finishes zooming
+ 
+ 
 innerHeroTimeline.from(".breadcrumbs li, .inner-hero-text h1, .inner-hero-text p", {
     y: 30,
     opacity: 0,
@@ -32,10 +32,10 @@ menuToggle.addEventListener("click", (e) => {
     menuItems.classList.toggle("active");
     navBtns.classList.toggle("active");
 
-    // Prevent body scrolling
+ 
     body.classList.toggle("menu-open");
 
-    // Change icon
+ 
     if (menuItems.classList.contains("active")) {
 
         menuToggle.innerHTML = '<i class="fa-solid fa-xmark"></i>';
@@ -48,7 +48,7 @@ menuToggle.addEventListener("click", (e) => {
 
 });
 
-// Close when clicking outside
+ 
 document.addEventListener("click", (e) => {
 
     if (
@@ -67,7 +67,7 @@ document.addEventListener("click", (e) => {
 
 });
 
-// Close after clicking any link
+ 
 document.querySelectorAll(".menu-items a, .nav-btns a").forEach(link => {
 
     link.addEventListener("click", () => {

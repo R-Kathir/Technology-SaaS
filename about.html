@@ -31,8 +31,7 @@
                 <a href="contact.html">Contact</a>
             </div>
             <div class="nav-btns">
-                <a href="login.html" class="login-btn">Login</a>
-                <a href="contact.html" class="btn btn-primary">Get in Touch</a>
+                <a href="login.html" class="btn btn-primary">Login</a>
             </div>
             <button class="menu-toggle">
                 <i class="fa-solid fa-bars"></i>
@@ -188,11 +187,11 @@
             </div>
         </div>
     </section>
-    <!-- ==================== CORE VALUES SECTION ==================== -->
+     
     <section class="core-values section-pad">
         <div class="container">
 
-            <!-- Section Header -->
+             
             <div class="section-header text-center mb-5">
                 <h2 class="sec-head">Our Core Values</h2>
                 <p class="sec-desc text-muted mx-auto max-w-md">The foundational principles that drive our engineering,
@@ -201,7 +200,7 @@
 
             <div class="values-wrapper">
 
-                <!-- Value 1: Standard Row (Image Left, Text Right) -->
+                 
                 <div class="value-row">
                     <div class="value-image shadow-md">
                         <img src="./assets/value1.webp" alt="Relentless Innovation" loading="lazy">
@@ -215,7 +214,7 @@
                     </div>
                 </div>
 
-                <!-- Value 2: Reverse Row (Text Left, Image Right) -->
+                 
                 <div class="value-row rev-row">
                     <div class="value-image shadow-md">
                         <img src="./assets/value2.webp" alt="Uncompromising Security" loading="lazy">
@@ -229,7 +228,7 @@
                     </div>
                 </div>
 
-                <!-- Value 3: Standard Row (Image Left, Text Right) -->
+                 
                 <div class="value-row">
                     <div class="value-image shadow-md">
                         <img src="./assets/value3.webp" alt="Radical Transparency" loading="lazy">
@@ -441,15 +440,15 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
     <script src="script.js"></script>
     <script>
-        // 1. Reveal the Headline (Right-to-Left Clip-Path)
+ 
         gsap.to(".sub-hero-content h1", {
-            // Expands the polygon to encompass the full element
+ 
             clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
             duration: 1.4,
             ease: "power4.inOut" // A heavy, cinematic ease
         });
 
-        // 2. Reveal the Paragraph
+ 
         gsap.to(".sub-hero-content p", {
             y: 0,
             opacity: 1,
@@ -457,14 +456,14 @@
             ease: "power3.out",
             delay: 0.8 // Starts just as the headline reveal is finishing its intense curve
         });
-        // Ensure ScrollTrigger is registered
-        // gsap.registerPlugin(ScrollTrigger);
+ 
+ 
 
-        // 1. Initial Hidden States
+ 
         gsap.set(".mission-vision-section .sec-head, .mission-vision-section .sec-desc", { y: 30, opacity: 0 });
         gsap.set(".mv-card", { y: 60, opacity: 0 });
 
-        // 2. The Timeline
+ 
         const mvTimeline = gsap.timeline({
             scrollTrigger: {
                 trigger: ".mission-vision-section",
@@ -474,7 +473,7 @@
         });
 
         mvTimeline
-            // Reveal Header
+ 
             .to(".mission-vision-section .sec-head, .mission-vision-section .sec-desc", {
                 y: 0,
                 opacity: 1,
@@ -482,7 +481,7 @@
                 stagger: 0.15,
                 ease: "power3.out"
             })
-            // Reveal Cards with a staggered lift
+ 
             .to(".mv-card", {
                 y: 0,
                 opacity: 1,
@@ -491,19 +490,19 @@
                 ease: "power3.out"
             }, "-=0.4");
 
-        // Ensure ScrollTrigger is registered
-        // gsap.registerPlugin(ScrollTrigger);
+ 
+ 
 
-        // 1. Initial States
+ 
         gsap.set(".journey-section .sec-head, .journey-section .sec-desc", { y: 30, opacity: 0 });
         gsap.set(".timeline-line", { scaleY: 0 }); // Hide the line initially
         gsap.set(".timeline-dot", { scale: 0, opacity: 0 });
 
-        // Hide left items off to the left, right items to the right
+ 
         gsap.set(".timeline-item.left .timeline-content", { x: -50, opacity: 0 });
         gsap.set(".timeline-item.right .timeline-content", { x: 50, opacity: 0 });
 
-        // 2. Reveal the Header
+ 
         gsap.to(".journey-section .sec-head, .journey-section .sec-desc", {
             scrollTrigger: {
                 trigger: ".journey-section",
@@ -517,7 +516,7 @@
             ease: "power3.out"
         });
 
-        // 3. Animate the Timeline Line
+ 
         gsap.to(".timeline-line", {
             scrollTrigger: {
                 trigger: ".timeline-container",
@@ -529,7 +528,7 @@
             ease: "none"
         });
 
-        // 4. Animate Individual Timeline Items
+ 
         const timelineItems = document.querySelectorAll(".timeline-item");
 
         timelineItems.forEach((item) => {
@@ -544,14 +543,14 @@
                 }
             });
 
-            // Pop the dot in
+ 
             tl.to(dot, {
                 scale: 1,
                 opacity: 1,
                 duration: 0.4,
                 ease: "back.out(2)"
             })
-                // Slide the card in
+ 
                 .to(content, {
                     x: 0,
                     opacity: 1,
@@ -559,25 +558,25 @@
                     ease: "power3.out"
                 }, "-=0.2");
         });
-        // Ensure ScrollTrigger is registered
-        // gsap.registerPlugin(ScrollTrigger);
+ 
+ 
 
-        // Target all value rows
+ 
         const valueRows = document.querySelectorAll('.value-row');
 
         valueRows.forEach((row) => {
             const image = row.querySelector('.value-image');
             const contentText = row.querySelector('.value-content');
 
-            // Determine direction based on whether it is a reversed row
+ 
             const isReversed = row.classList.contains('rev-row');
             const imageStartX = isReversed ? 50 : -50;
 
-            // 1. Initial Hidden States
+ 
             gsap.set(image, { x: imageStartX, opacity: 0 });
             gsap.set(contentText, { y: 40, opacity: 0 });
 
-            // 2. Create the scroll-triggered timeline
+ 
             const tl = gsap.timeline({
                 scrollTrigger: {
                     trigger: row,
@@ -586,7 +585,7 @@
                 }
             });
 
-            // 3. Animate elements in
+ 
             tl.to(image, {
                 x: 0,
                 opacity: 1,
@@ -601,21 +600,21 @@
                 }, "-=0.6"); // Overlaps with the image animation
         });
 
-        // Ensure ScrollTrigger is registered
-        // gsap.registerPlugin(ScrollTrigger);
+ 
+ 
 
-        // Horizontal Pinned Scroll Logic
-        // Only apply the horizontal scroll on desktop screens
+ 
+ 
         let mm = gsap.matchMedia();
 
         mm.add("(min-width: 993px)", () => {
 
             const track = document.querySelector(".horizontal-scroll-track");
 
-            // Calculate how far the track needs to move left to show the last card
+ 
             function getScrollAmount() {
                 let trackWidth = track.scrollWidth;
-                // Subtract the viewport width that the right side takes up (approx 60vw)
+ 
                 return -(trackWidth - (window.innerWidth * 0.6));
             }
 
@@ -634,7 +633,7 @@
                 invalidateOnRefresh: true // Recalculates if the user resizes the window
             });
 
-            // Optional: Fade in the static text on the left when it arrives
+ 
             gsap.from(".pinned-left .sec-head, .pinned-left .sec-desc, .pinned-action", {
                 scrollTrigger: {
                     trigger: ".team-pinned-section",

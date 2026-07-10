@@ -26,7 +26,7 @@
     --transition-smooth: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* --- Base Typography & Reset --- */
+ 
 body {
     font-family: var(--font-primary);
     background-color: var(--clr-bg-base);
@@ -35,7 +35,7 @@ body {
     margin: 0;
     -webkit-font-smoothing: antialiased;
     overflow-x: hidden;
-    /* padding-top: 70px; */
+     
 
 }
 
@@ -285,7 +285,7 @@ body.menu-open {
 
         right: -100%;
 
-        /* width: 100%; */
+         
 
         background: transparent;
 
@@ -319,7 +319,7 @@ body.menu-open {
 
     .nav-btns a {
 
-        /* width: 100%; */
+         
 
         text-align: center;
 
@@ -412,23 +412,23 @@ section {
     background-color: var(--clr-bg-navbar);
 }
 
-/* ==================== PREMIUM CTA SECTION ==================== */
+ 
 .cta-premium-wrapper {
     position: relative;
     overflow: hidden;
     background: linear-gradient(145deg, #1A1B20 0%, #0F1013 100%);
-    /* Deep, rich dark background */
+     
     border: 1px solid rgba(255, 255, 255, 0.08);
-    /* Barely visible glass edge */
+     
     border-radius: 24px;
-    /* Smoother, modern curves */
+     
     padding: 6rem 2rem;
     box-shadow: 0 30px 60px rgba(0, 0, 0, 0.15);
-    /* Soft, wide shadow */
+     
     z-index: 1;
 }
 
-/* Creates the soft cyan light hitting the top of the box */
+ 
 .cta-glow-bg {
     position: absolute;
     top: 0;
@@ -470,16 +470,16 @@ section {
     justify-content: center;
 }
 
-/* Upgraded Cyan Button */
+ 
 .btn-cyan {
     background-color: var(--clr-cyan, #00E5FF);
     color: #041014;
-    /* Very dark cyan/black for maximum legibility */
+     
     padding: 1rem 2.5rem;
     font-weight: 600;
     border-radius: 50px;
     box-shadow: 0 8px 20px rgba(0, 229, 255, 0.2);
-    /* Cyan glow shadow */
+     
 }
 
 .btn-cyan:hover {
@@ -488,7 +488,7 @@ section {
     box-shadow: 0 12px 24px rgba(0, 229, 255, 0.3);
 }
 
-/* New Dark Outline Button for the CTA */
+ 
 .btn-outline-dark {
     background-color: rgba(255, 255, 255, 0.05);
     color: #FFFFFF;
@@ -516,10 +516,10 @@ section {
 .cta-microcopy .material-symbols-rounded {
     font-size: 1rem;
     color: var(--clr-cyan, #00E5FF);
-    /* Small pop of color */
+     
 }
 
-/* Mobile Adjustments */
+ 
 @media (max-width: 768px) {
     .cta-premium-wrapper {
         padding: 4rem 1.5rem;
@@ -545,7 +545,7 @@ section {
 
 
 
-/* ==================== FOOTER SECTION ==================== */
+ 
 .site-footer {
     background-color: var(--clr-bg-base);
     border-top: 1px solid var(--clr-border-subtle);
@@ -567,7 +567,7 @@ section {
     max-width: 90%;
 }
 
-/* Newsletter Form */
+ 
 .newsletter-form {
     display: flex;
     align-items: center;
@@ -580,7 +580,7 @@ section {
 
 .newsletter-form:focus-within {
     box-shadow: 0 0 0 2px rgba(242, 118, 34, 0.2);
-    /* Subtle Stackly orange focus */
+     
     border-color: var(--clr-primary);
 }
 
@@ -614,7 +614,7 @@ section {
     display: block;
 }
 
-/* Footer Links */
+ 
 .footer-col h4 {
     font-size: 1rem;
     color: var(--clr-text-heading);
@@ -642,7 +642,7 @@ section {
 .footer-links a:hover {
     color: var(--clr-primary);
     transform: translateX(4px);
-    /* Premium slight slide effect on hover */
+     
 }
 
 .social-links .icon {
@@ -650,7 +650,7 @@ section {
     color: var(--clr-text-heading);
 }
 
-/* Mobile Responsiveness */
+ 
 @media (max-width: 992px) {
     .cta-box {
         grid-template-columns: 1fr;
@@ -669,7 +669,7 @@ section {
     }
 }
 
-/* --- Brand Column Overrides --- */
+ 
 .brand-col .logo {
     max-width: 150px;
     margin-bottom: 1.5rem;
@@ -684,14 +684,14 @@ section {
     max-width: 95%;
 }
 
-/* --- Social Icon Grid --- */
+ 
 .social-icons {
     display: flex;
     gap: 1rem;
     align-items: center;
 }
 
-/* Base state: Subtle outlines */
+ 
 .social-link {
     color: var(--clr-text-body);
     display: flex;
@@ -703,24 +703,24 @@ section {
     background-color: transparent;
     border: 1px solid var(--clr-border-subtle);
     transition: all var(--transition-smooth);
-    /* Using the bezier easing from your root */
+     
 }
 
-/* Hover state: Fills in and pops up */
+ 
 .social-link:hover {
     color: #FFFFFF;
-    /* Forces the SVG icon to white */
+     
     background-color: var(--clr-primary);
-    /* You can swap this to var(--clr-primary) for the orange */
+     
     border-color: var(--clr-primary-hover);
     transform: translateY(-4px);
     box-shadow: 0 6px 12px rgba(0, 229, 255, 0.2);
 }
 
-/* ==================== FOOTER BOTTOM ==================== */
+ 
 .footer-bottom {
     margin-top: 4rem;
-    /* Creates space between the main footer grid and the bottom bar */
+     
     padding-top: 2rem;
     border-top: 1px solid var(--clr-border-subtle);
     display: flex;
@@ -741,14 +741,14 @@ section {
 }
 
 .footer-legal a:hover {
-    /* Using the cyan accent for hover */
+     
 }
 
-/* Mobile Responsiveness */
+ 
 @media (max-width: 768px) {
     .footer-bottom {
         flex-direction: column-reverse;
-        /* Puts copyright at the very bottom on mobile */
+         
         gap: 1.5rem;
         text-align: center;
         padding-bottom: 2rem;
@@ -761,20 +761,20 @@ section {
     }
 }
 
-/* ==================== INNER PAGE HERO ==================== */
+ 
 .inner-page-hero {
     position: relative;
     min-height: 60vh;
-    /* Gives the hero a nice, tall cinematic feel */
+     
     display: flex;
     align-items: center;
     padding-top: 100px;
-    /* Accounts for global fixed navbar */
+     
     padding-bottom: 4rem;
     overflow: hidden;
 }
 
-/* --- Background Image & Overlay --- */
+ 
 .hero-bg-wrapper {
     position: absolute;
     top: 0;
@@ -789,7 +789,7 @@ section {
     height: 100%;
     object-fit: cover;
     object-position: center;
-    /* GSAP scales this from 1.1 down to 1 */
+     
 }
 
 .hero-overlay {
@@ -798,20 +798,20 @@ section {
     left: 0;
     width: 100%;
     height: 100%;
-    /* Dark gradient: darkest on the left where the text sits */
+     
     background: linear-gradient(to right, rgba(10, 11, 14, 0.9) 0%, rgba(10, 11, 14, 0.4) 100%);
     z-index: 2;
 }
 
-/* --- Content Layout --- */
+ 
 .hero-content-wrapper {
     position: relative;
     z-index: 3;
-    /* Keeps text above the overlay */
+     
     width: 100%;
 }
 
-/* --- Breadcrumbs --- */
+ 
 .breadcrumbs {
     margin-bottom: 2rem;
 }
@@ -837,7 +837,7 @@ section {
 
 .breadcrumbs a {
     color: #A0AEC0;
-    /* Muted gray */
+     
     transition: color var(--transition-fast);
 }
 
@@ -848,16 +848,16 @@ section {
 .breadcrumbs .separator .material-symbols-rounded {
     font-size: 1.1rem;
     color: #4A5568;
-    /* Darker gray for the arrows */
+     
     margin-top: 2px;
 }
 
 .breadcrumbs .current {
     color: #FFFFFF;
-    /* Bright white for the current page */
+     
 }
 
-/* --- Hero Text --- */
+ 
 .inner-hero-text {
     max-width: 700px;
 }
@@ -877,7 +877,7 @@ section {
     margin: 0;
 }
 
-/* Mobile Responsiveness */
+ 
 @media (max-width: 768px) {
     .inner-page-hero {
         min-height: 50vh;
@@ -893,22 +893,22 @@ section {
     }
 }
 
-/* --- Hero Action Buttons --- */
+ 
 .hero-actions {
     display: flex;
     gap: 1rem;
     margin-top: 2.5rem;
 }
 
-/* Ensure these specific buttons look great in the hero */
+ 
 .hero-actions .btn {
     padding: 0.85rem 2rem;
     font-size: 0.95rem;
     border-radius: 50px;
-    /* Pill shape for a modern SaaS look */
+     
 }
 
-/* Mobile Responsiveness */
+ 
 @media (max-width: 768px) {
     .hero-actions {
         flex-direction: column;

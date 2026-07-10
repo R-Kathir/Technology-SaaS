@@ -10,7 +10,7 @@
 
     <title>404 - Page Not Found | Stackly</title>
 
-    <!-- Fonts -->
+     
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
 
@@ -18,11 +18,11 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-    <!-- Font Awesome -->
+     
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
-    <!-- CSS -->
+     
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
@@ -37,9 +37,9 @@
 
 <body>
     <style>
-        /* ==================== 404 ERROR PAGE ==================== */
+         
 
-        /* Ensure the section takes the full screen height */
+         
         .not-found-section {
             position: relative;
             min-height: 100vh;
@@ -51,7 +51,7 @@
             padding: 2rem;
         }
 
-        /* Subtle Tech Grid Background */
+         
         .error-bg-grid {
             position: absolute;
             top: 0;
@@ -67,7 +67,7 @@
             z-index: 1;
         }
 
-        /* Utility Classes */
+         
         .relative {
             position: relative;
         }
@@ -101,7 +101,7 @@
             color: var(--clr-text-body);
         }
 
-        /* Error Visuals */
+         
         .error-visual {
             position: relative;
             display: inline-block;
@@ -134,7 +134,7 @@
             z-index: 1;
         }
 
-        /* Typography */
+         
         .badge-error {
             display: inline-block;
             background-color: rgba(242, 118, 34, 0.1);
@@ -161,7 +161,7 @@
             line-height: 1.6;
         }
 
-        /* Buttons */
+         
         .error-actions {
             display: flex;
             align-items: center;
@@ -212,7 +212,7 @@
             font-size: 1.2rem;
         }
 
-        /* Mobile Responsiveness */
+         
         @media (max-width: 768px) {
             .error-code {
                 font-size: 6rem;
@@ -269,10 +269,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
 
     <script>
-        // Ensure GSAP is loaded in your project
+ 
 gsap.registerPlugin(ScrollTrigger);
 
-        // Continuous floating effect for the 404 text
+ 
         gsap.to(".error-visual", {
             y: -15,
             duration: 2,
@@ -281,7 +281,7 @@ gsap.registerPlugin(ScrollTrigger);
             repeat: -1
         });
 
-        // Entrance Animation
+ 
         const errorTl = gsap.timeline();
 
         errorTl

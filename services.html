@@ -31,8 +31,7 @@
                 <a href="contact.html">Contact</a>
             </div>
             <div class="nav-btns">
-                <a href="login.html" class="login-btn">Login</a>
-                <a href="contact.html" class="btn btn-primary">Get in Touch</a>
+                <a href="login.html" class="btn btn-primary">Login</a>
             </div>
             <button class="menu-toggle">
                 <i class="fa-solid fa-bars"></i>
@@ -212,11 +211,11 @@
             </div>
         </div>
     </section>
-    <!-- ==================== BENTO BOX SAAS FEATURES ==================== -->
+     
     <section class="bento-section section-pad dark-section">
         <div class="container">
 
-            <!-- Section Header -->
+             
             <div class="section-header text-center mb-5">
                 <h2 class="sec-head">Built for Modern Scale</h2>
                 <p class="sec-desc text-muted mx-auto max-w-md">Everything your engineering team needs to build, deploy,
@@ -225,7 +224,7 @@
 
             <div class="bento-grid">
 
-                <!-- Block 1: Large Main Feature (Spans 2 columns, 2 rows) -->
+                 
                 <div class="bento-item bento-large glass-card">
                     <img src="./assets/services1.webp" alt="Global Edge Network" class="bento-bg" loading="lazy">
                     <div class="bento-overlay"></div>
@@ -237,7 +236,7 @@
                     </div>
                 </div>
 
-                <!-- Block 2: Small Square (Top Right) -->
+                 
                 <div class="bento-item bento-small glass-card">
                     <img src="./assets/services2.webp" alt="Real-time Analytics" class="bento-bg" loading="lazy">
                     <div class="bento-overlay"></div>
@@ -249,7 +248,7 @@
                     </div>
                 </div>
 
-                <!-- Block 3: Small Square (Bottom Right) -->
+                 
                 <div class="bento-item bento-small glass-card">
                     <img src="./assets/services3.webp" alt="Serverless Database" class="bento-bg" loading="lazy">
                     <div class="bento-overlay"></div>
@@ -264,12 +263,12 @@
             </div>
         </div>
     </section>
-    <!-- ==================== VERTICAL PINNED SCROLL SECTION ==================== -->
-    <!-- ==================== VERTICAL PINNED SCROLL SECTION ==================== -->
+     
+     
     <section class="pinned-scroll-section dark-section">
         <div class="pinned-layout">
 
-            <!-- Left Column: Sticky Text -->
+             
             <div class="pinned-left-col">
                 <div class="sticky-content">
                     <div class="sticky-header">
@@ -277,10 +276,10 @@
                         <p class="sec-desc text-muted">A unified architecture for the modern web.</p>
                     </div>
 
-                    <!-- Text Blocks (Overlapping) -->
+                     
                     <div class="details-container">
 
-                        <!-- Detail 1 -->
+                         
                         <div class="detail-block active" id="detail-1">
                             <div class="project-number">01</div>
                             <h3>Global Edge Compute</h3>
@@ -289,7 +288,7 @@
                             <a href="404page.html" class="btn btn-primary mt-3">Explore Edge</a>
                         </div>
 
-                        <!-- Detail 2 -->
+                         
                         <div class="detail-block" id="detail-2">
                             <div class="project-number">02</div>
                             <h3>Serverless Data</h3>
@@ -298,7 +297,7 @@
                             <a href="404page.html" class="btn btn-primary mt-3">View Database Solutions</a>
                         </div>
 
-                        <!-- Detail 3 -->
+                         
                         <div class="detail-block" id="detail-3">
                             <div class="project-number">03</div>
                             <h3>Enterprise Security</h3>
@@ -311,24 +310,24 @@
                 </div>
             </div>
 
-            <!-- Right Column: Scrolling Images -->
+             
             <div class="pinned-right-col">
 
-                <!-- Visual 1 -->
+                 
                 <div class="visual-block" id="visual-1">
                     <div class="image-wrapper shadow-lg">
                         <img src="./assets/services5.webp" alt="Global Edge Network Map" loading="lazy">
                     </div>
                 </div>
 
-                <!-- Visual 2 -->
+                 
                 <div class="visual-block" id="visual-2">
                     <div class="image-wrapper shadow-lg">
                         <img src="./assets/services6.webp" alt="Database Metrics Dashboard" loading="lazy">
                     </div>
                 </div>
 
-                <!-- Visual 3 -->
+                 
                 <div class="visual-block" id="visual-3">
                     <div class="image-wrapper shadow-lg">
                         <img src="./assets/services7.webp" alt="Security Firewall Dashboard" loading="lazy">
@@ -547,14 +546,14 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
     <script src="script.js"></script>
     <script>
-        // Ensure ScrollTrigger is registered
-        // gsap.registerPlugin(ScrollTrigger);
+ 
+ 
 
-        // 1. Initial State
+ 
         gsap.set(".infra-security-section .sec-head, .infra-security-section .sec-desc", { y: 30, opacity: 0 });
         gsap.set(".security-card", { y: 50, opacity: 0 });
 
-        // 2. The Timeline
+ 
         const securityTimeline = gsap.timeline({
             scrollTrigger: {
                 trigger: ".infra-security-section",
@@ -564,7 +563,7 @@
         });
 
         securityTimeline
-            // A: Fade in Header
+ 
             .to(".infra-security-section .sec-head, .infra-security-section .sec-desc", {
                 y: 0,
                 opacity: 1,
@@ -572,7 +571,7 @@
                 stagger: 0.15,
                 ease: "power3.out"
             })
-            // B: Stagger Cards in with a fluid, overlapping reveal
+ 
             .to(".security-card", {
                 y: 0,
                 opacity: 1,
@@ -581,14 +580,14 @@
                 ease: "back.out(1.2)" // A very slight pop/snap effect
             }, "-=0.4");
 
-        // Ensure ScrollTrigger is registered
-        // gsap.registerPlugin(ScrollTrigger);
+ 
+ 
 
-        // 1. Initial State
+ 
         gsap.set(".why-choose-us .sec-head, .why-choose-us .sec-desc", { y: 30, opacity: 0 });
         gsap.set(".wcu-card", { y: 40, opacity: 0 });
 
-        // 2. The Timeline
+ 
         const wcuTimeline = gsap.timeline({
             scrollTrigger: {
                 trigger: ".why-choose-us",
@@ -598,7 +597,7 @@
         });
 
         wcuTimeline
-            // A: Fade in Header
+ 
             .to(".why-choose-us .sec-head, .why-choose-us .sec-desc", {
                 y: 0,
                 opacity: 1,
@@ -606,7 +605,7 @@
                 stagger: 0.15,
                 ease: "power3.out"
             })
-            // B: Stagger Cards in
+ 
             .to(".wcu-card", {
                 y: 0,
                 opacity: 1,
@@ -615,24 +614,24 @@
                 ease: "power3.out"
             }, "-=0.4");
 
-        // Ensure ScrollTrigger is registered
-        // gsap.registerPlugin(ScrollTrigger);
+ 
+ 
 
-        // Only run the complex pinned logic on Desktop screens
+ 
         let mediaMatch = gsap.matchMedia();
 
         mediaMatch.add("(min-width: 993px)", () => {
 
-            // Grab all visual blocks on the right and detail blocks on the left
+ 
             const visuals = document.querySelectorAll(".visual-block");
             const details = document.querySelectorAll(".detail-block");
 
             visuals.forEach((visual, index) => {
                 ScrollTrigger.create({
                     trigger: visual,
-                    // Trigger point: When the top of the image hits the center of the viewport
+ 
                     start: "top center",
-                    // End point: When the bottom of the image leaves the center of the viewport
+ 
                     end: "bottom center",
 
                     onEnter: () => updateActiveDetail(index),
@@ -640,7 +639,7 @@
                 });
             });
 
-            // Helper function to swap the active text block
+ 
             function updateActiveDetail(activeIndex) {
                 details.forEach((detail, i) => {
                     if (i === activeIndex) {
@@ -652,9 +651,9 @@
             }
         });
 
-        // Ensure GSAP and ScrollTrigger are loaded
+ 
 
-        // 1. Scroll Reveal Animation
+ 
         gsap.from(".pricing-card", {
             scrollTrigger: {
                 trigger: ".pricing-section",
@@ -667,7 +666,7 @@
             ease: "power3.out"
         });
 
-        // 2. Billing Toggle Logic
+ 
         const toggleBtn = document.getElementById('billingToggle');
         const labelMonthly = document.getElementById('label-monthly');
         const labelAnnual = document.getElementById('label-annual');
@@ -678,10 +677,10 @@
         toggleBtn.addEventListener('click', () => {
             isMonthly = !isMonthly;
 
-            // Update ARIA state for accessibility
+ 
             toggleBtn.setAttribute('aria-pressed', isMonthly);
 
-            // Toggle active classes on labels
+ 
             if (isMonthly) {
                 labelMonthly.classList.add('active');
                 labelAnnual.classList.remove('active');
@@ -690,15 +689,15 @@
                 labelAnnual.classList.add('active');
             }
 
-            // Animate the price change
+ 
             priceElements.forEach(priceEl => {
-                // Grab the new value based on state
+ 
                 const newValue = isMonthly ? priceEl.getAttribute('data-monthly') : priceEl.getAttribute('data-annual');
 
-                // Skip animation if the price is the same (like the $0 free tier)
+ 
                 if (priceEl.innerText === newValue) return;
 
-                // GSAP Timeline for the number swap
+ 
                 const tl = gsap.timeline();
 
                 tl.to(priceEl, {
@@ -707,7 +706,7 @@
                     duration: 0.2,
                     ease: "power2.in",
                     onComplete: () => {
-                        // Swap the text while it is invisible
+ 
                         priceEl.innerText = newValue;
                     }
                 })

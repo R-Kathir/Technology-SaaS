@@ -31,8 +31,7 @@
                 <a href="contact.html">Contact</a>
             </div>
             <div class="nav-btns">
-                <a href="login.html" class="login-btn">Login</a>
-                <a href="contact.html" class="btn btn-primary">Get in Touch</a>
+                <a href="login.html" class="btn btn-primary">Login</a>
             </div>
             <button class="menu-toggle">
                 <i class="fa-solid fa-bars"></i>
@@ -122,11 +121,11 @@
             </div>
         </div>
     </section>
-    <!-- ==================== MAIN ARTICLE GRID ==================== -->
+     
     <section class="article-grid-section section-pad bg-light-gray" id="articles">
         <div class="container">
 
-            <!-- Category Filter -->
+             
             <div class="article-filters mb-5">
                 <button class="filter-btn active" data-filter="all">All Articles</button>
                 <button class="filter-btn" data-filter="engineering">Engineering</button>
@@ -134,10 +133,10 @@
                 <button class="filter-btn" data-filter="product">Product Updates</button>
             </div>
 
-            <!-- The Grid -->
+             
             <div class="article-grid">
 
-                <!-- Article 1 -->
+                 
                 <article class="article-card shadow-sm" data-category="mobile">
                     <div class="card-image-wrapper">
                         <img src="./assets/blog2.webp" alt="Abstract mobile architecture" loading="lazy">
@@ -160,7 +159,7 @@
                     </div>
                 </article>
 
-                <!-- Article 2 -->
+                 
                 <article class="article-card shadow-sm" data-category="engineering">
                     <div class="card-image-wrapper">
                         <img src="./assets/blog3.webp" alt="Abstract data blocks" loading="lazy">
@@ -183,7 +182,7 @@
                     </div>
                 </article>
 
-                <!-- Article 3 -->
+                 
                 <article class="article-card shadow-sm" data-category="product">
                     <div class="card-image-wrapper">
                         <img src="./assets/blog4.webp" alt="Abstract security shield" loading="lazy">
@@ -206,7 +205,7 @@
                     </div>
                 </article>
 
-                <!-- Article 4 -->
+                 
                 <article class="article-card shadow-sm" data-category="engineering">
                     <div class="card-image-wrapper">
                         <img src="./assets/blog5.webp" alt="Abstract interconnected nodes" loading="lazy">
@@ -229,7 +228,7 @@
                     </div>
                 </article>
 
-                <!-- Article 5 -->
+                 
                 <article class="article-card shadow-sm" data-category="product">
                     <div class="card-image-wrapper">
                         <img src="./assets/blog6.webp" alt="Abstract data visualization" loading="lazy">
@@ -253,7 +252,7 @@
                     </div>
                 </article>
 
-                <!-- Article 6 -->
+                 
                 <article class="article-card shadow-sm" data-category="mobile">
                     <div class="card-image-wrapper">
                         <img src="./assets/blog7.webp" alt="Abstract mobile device layers" loading="lazy">
@@ -277,7 +276,7 @@
                     </div>
                 </article>
 
-                <!-- Article 7 -->
+                 
                 <article class="article-card shadow-sm" data-category="engineering">
                     <div class="card-image-wrapper">
                         <img src="./assets/blog8.webp" alt="Abstract network grid" loading="lazy">
@@ -301,7 +300,7 @@
                     </div>
                 </article>
 
-                <!-- Article 8 -->
+                 
                 <article class="article-card shadow-sm" data-category="product">
                     <div class="card-image-wrapper">
                         <img src="./assets/blog9.webp" alt="Abstract terminal window" loading="lazy">
@@ -325,7 +324,7 @@
                     </div>
                 </article>
 
-                <!-- Article 9 -->
+                 
                 <article class="article-card shadow-sm" data-category="engineering">
                     <div class="card-image-wrapper">
                         <img src="./assets/blog10.webp" alt="Abstract database servers" loading="lazy">
@@ -348,7 +347,7 @@
                         </div>
                     </div>
                 </article>
-                <!-- Load More Button -->
+                 
                 <div class="text-center mt-5">
                     <button class="btn btn-outline-dark load-more-btn">Load More Articles</button>
                 </div>
@@ -356,16 +355,16 @@
 
         </div>
     </section>
-    <!-- ==================== STANDALONE NEWSLETTER SECTION ==================== -->
+     
     <section class="newsletter-section section-pad dark-section mt-5">
         <div class="container">
             <div class="newsletter-trap shadow-lg">
 
-                <!-- Decorative Glow Orbs -->
+                 
                 <div class="glow-orb orb-cyan"></div>
                 <div class="glow-orb orb-orange"></div>
 
-                <!-- Content Left -->
+                 
                 <div class="trap-content">
                     <span class="trap-badge">Stay Ahead</span>
                     <h3>Architecture insights, delivered weekly.</h3>
@@ -373,7 +372,7 @@
                         into high-performance Flutter mobile architecture.</p>
                 </div>
 
-                <!-- Form Right -->
+                 
                 <div class="trap-form-container">
                     <form id="newsletterForm" class="trap-form" novalidate>
                         <div class="input-group" id="inputGroup">
@@ -384,7 +383,7 @@
                                 <span class="btn-text">Subscribe</span>
                             </button>
                         </div>
-                        <!-- Validation Message Container -->
+                         
                         <div class="validation-message" id="valMessage"></div>
                     </form>
                 </div>
@@ -513,7 +512,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
     <script src="script.js"></script>
     <script>
-        // Ensure GSAP and ScrollTrigger are loaded
+ 
 
         const featuredPostTimeline = gsap.timeline({
             scrollTrigger: {
@@ -524,28 +523,28 @@
         });
 
         featuredPostTimeline
-            // Reveal the subtle label line first
+ 
             .from(".section-label", {
                 opacity: 0,
                 x: -20,
                 duration: 0.6,
                 ease: "power2.out"
             })
-            // Slide the main card up
+ 
             .from(".featured-card", {
                 y: 60,
                 opacity: 0,
                 duration: 1,
                 ease: "power3.out"
             }, "-=0.4")
-            // Zoom out the image slightly for a cinematic reveal
+ 
             .from(".featured-img", {
                 scale: 1.15,
                 duration: 1.5,
                 ease: "power2.out"
             }, "-=1");
 
-        // 1. Initial Scroll Reveal for the Grid
+ 
         gsap.from(".article-card", {
             scrollTrigger: {
                 trigger: ".article-grid-section",
@@ -558,30 +557,30 @@
             ease: "power2.out"
         });
 
-        // 2. Filter Button Logic
+ 
         const filterBtns = document.querySelectorAll('.filter-btn');
         const articles = document.querySelectorAll('.article-card');
 
         filterBtns.forEach(btn => {
             btn.addEventListener('click', () => {
-                // Remove active class from all buttons
+ 
                 filterBtns.forEach(b => b.classList.remove('active'));
-                // Add active class to clicked button
+ 
                 btn.classList.add('active');
 
                 const filterValue = btn.getAttribute('data-filter');
 
-                // Create a GSAP timeline for smooth filtering
+ 
                 const filterTimeline = gsap.timeline();
 
-                // Step 1: Fade out all articles
+ 
                 filterTimeline.to(articles, {
                     opacity: 0,
                     scale: 0.95,
                     duration: 0.3,
                     ease: "power2.inOut",
                     onComplete: () => {
-                        // Step 2: Hide/Show based on category while invisible
+ 
                         articles.forEach(article => {
                             if (filterValue === 'all' || article.getAttribute('data-category') === filterValue) {
                                 article.style.display = 'flex';
@@ -591,7 +590,7 @@
                         });
                     }
                 })
-                    // Step 3: Fade back in the visible articles
+ 
                     .to(articles, {
                         opacity: 1,
                         scale: 1,
@@ -602,7 +601,7 @@
             });
         });
 
-        // Ensure GSAP is loaded in your project
+ 
 
         const form = document.getElementById('newsletterForm');
         const emailInput = document.getElementById('emailInput');
@@ -611,7 +610,7 @@
         const submitBtn = document.getElementById('submitBtn');
         const btnText = submitBtn.querySelector('.btn-text');
 
-        // Regex for standard email validation
+ 
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
         form.addEventListener('submit', (e) => {
@@ -619,45 +618,45 @@
 
             const emailValue = emailInput.value.trim();
 
-            // Reset classes
+ 
             inputGroup.classList.remove('error-state');
             valMessage.classList.remove('error-text', 'success-text');
 
-            // 1. Validation Check: Is it empty?
+ 
             if (emailValue === '') {
                 showError('Please enter an email address.');
                 return;
             }
 
-            // 2. Validation Check: Is it a valid format?
+ 
             if (!emailRegex.test(emailValue)) {
                 showError('Please enter a valid corporate email address.');
                 return;
             }
 
-            // 3. Success State (Simulating an API call)
+ 
             showLoadingState();
 
-            // Simulate network delay (1.5 seconds)
+ 
             setTimeout(() => {
                 showSuccess('Subscription successful! Check your inbox.');
             }, 1500);
         });
 
-        // Function to handle Error State
+ 
         function showError(message) {
             inputGroup.classList.add('error-state');
             valMessage.textContent = message;
             valMessage.classList.add('error-text');
 
-            // GSAP Shake Animation for physical feedback
+ 
             gsap.fromTo(inputGroup,
                 { x: -5 },
                 { x: 5, duration: 0.05, yoyo: true, repeat: 5, clearProps: "x" }
             );
         }
 
-        // Function to handle Loading State
+ 
         function showLoadingState() {
             btnText.textContent = 'Submitting...';
             submitBtn.style.opacity = '0.8';
@@ -665,13 +664,13 @@
             emailInput.disabled = true;
         }
 
-        // Function to handle Success State
+ 
         function showSuccess(message) {
-            // Re-enable input for future use
+ 
             submitBtn.style.opacity = '1';
             emailInput.disabled = false;
 
-            // Update UI
+ 
             btnText.textContent = 'Subscribed!';
             submitBtn.classList.remove('btn-cyan');
             submitBtn.style.backgroundColor = '#00E5FF'; // Force cyan success color
@@ -680,7 +679,7 @@
             valMessage.textContent = message;
             valMessage.classList.add('success-text');
 
-            // GSAP smooth fade in for success message
+ 
             gsap.from(valMessage, {
                 y: 10,
                 opacity: 0,
@@ -688,10 +687,10 @@
                 ease: "power2.out"
             });
 
-            // Clear input
+ 
             emailInput.value = '';
 
-            // Optional: Reset button text after 4 seconds
+ 
             setTimeout(() => {
                 btnText.textContent = 'Subscribe';
                 valMessage.classList.remove('success-text');

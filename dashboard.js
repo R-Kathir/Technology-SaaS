@@ -10,14 +10,14 @@ if (stored_Email || stored_userName) {
 }
 gsap.registerPlugin(ScrollTrigger);
 
-//======================================================
-// Page Animation
-//======================================================
+ 
+ 
+ 
 const sidebar = document.querySelector(".sidebar");
 const sidebarToggle = document.querySelector(".sidebar-toggle");
 const menuButtons = document.querySelectorAll(".menu-title");
 
-// Toggle Sidebar
+ 
 sidebarToggle.addEventListener("click", (e) => {
 
     e.stopPropagation();
@@ -26,14 +26,14 @@ sidebarToggle.addEventListener("click", (e) => {
 
 });
 
-// Prevent sidebar clicks from bubbling
+ 
 sidebar.addEventListener("click", (e) => {
 
     e.stopPropagation();
 
 });
 
-// Close when clicking outside
+ 
 document.addEventListener("click", () => {
 
     if (window.innerWidth <= 992) {
@@ -44,7 +44,7 @@ document.addEventListener("click", () => {
 
 });
 
-// Close when clicking menu
+ 
 menuButtons.forEach(button => {
 
     button.addEventListener("click", () => {
@@ -60,71 +60,71 @@ menuButtons.forEach(button => {
 });
 const tl = gsap.timeline();
 
-// tl.from(".dashboard-header", {
-//     y: -60,
-//     opacity: 0,
-//     duration: .7,
-//     ease: "power3.out"
-// })
-
-//     .from(".sidebar", {
-//         x: -100,
-//         opacity: 0,
-//         duration: .8,
-//         ease: "power3.out"
-//     }, "-=.5")
-
-// .from(".welcome-banner", {
-//     y: 40,
-//     opacity: 0,
-//     duration: .7
-// }, "-=.4")
-
-// .from(".stat-card", {
-//     y: 40,
-//     opacity: 0,
-//     stagger: .12,
-//     duration: .6,
-//     ease: "power3.out"
-// }, "-=.4")
-
-// .from(".chart-card", {
-//     x: -40,
-//     opacity: 0,
-//     duration: .8
-// }, "-=.3")
-
-// .from(".system-status", {
-//     x: 40,
-//     opacity: 0,
-//     duration: .8
-// }, "-=.8")
-
-// .from(".table-card", {
-//     y: 40,
-//     opacity: 0,
-//     duration: .8
-// }, "-=.4")
-
-// .from(".notification-card", {
-//     y: 40,
-//     opacity: 0,
-//     duration: .8
-// }, "-=.6");
-
-
-//======================================================
+ 
+ 
+ 
+ 
+ 
  
 
-//======================================================
-// Accordion Menu
-//======================================================
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+
+
+ 
+ 
+
+ 
+ 
+ 
 
 
 
-//======================================================
-// Profile Dropdown
-//======================================================
+ 
+ 
+ 
 
 const profile = document.querySelector(".profile-box");
 
@@ -158,20 +158,20 @@ menuButtons.forEach(button => {
 
     button.addEventListener("click", () => {
 
-        // Remove active class from all buttons
+ 
         menuButtons.forEach(btn => {
             btn.classList.remove("active");
         });
 
-        // Add active class to clicked button
+ 
         button.classList.add("active");
 
     });
 
 });
-//======================================================
-// Counter Animation
-//======================================================
+ 
+ 
+ 
 
 document.querySelectorAll(".stat-card h2").forEach(counter => {
 
@@ -198,9 +198,9 @@ document.querySelectorAll(".stat-card h2").forEach(counter => {
 });
 
 
-//======================================================
-// Notification Hover
-//======================================================
+ 
+ 
+ 
 
 document.querySelectorAll(".notification").forEach(card => {
 
@@ -269,11 +269,11 @@ document.getElementById("dashboardBtn").onclick = () => {
 
 };
 
-// document.getElementById("userBtn").onclick = () => {
+ 
 
-//     showPage("userPage");
+ 
 
-// };
+ 
 
 document.getElementById("infraBtn").onclick = () => {
 

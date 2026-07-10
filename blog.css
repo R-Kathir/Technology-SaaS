@@ -1,9 +1,9 @@
-/* ==================== FEATURED ARTICLE SECTION ==================== */
+ 
 .bg-light-gray {
     background-color: #F8F9FA;
 }
 
-/* Section Label (Small line next to text) */
+ 
 .section-label {
     display: flex;
     align-items: center;
@@ -24,7 +24,7 @@
     background-color: rgba(0, 0, 0, 0.1);
 }
 
-/* --- Featured Card Layout --- */
+ 
 .featured-card {
     display: flex;
     background-color: #FFFFFF;
@@ -39,7 +39,7 @@
     transform: translateY(-4px);
 }
 
-/* Left Side: Image */
+ 
 .featured-image-wrapper {
     flex: 1.2;
     position: relative;
@@ -127,13 +127,13 @@
     margin-bottom: 2rem;
 }
 
-/* Footer: Author & Link */
+ 
 .featured-footer {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-top: auto;
-    /* Pushes footer to the bottom if content is short */
+     
     padding-top: 2rem;
     border-top: 1px solid rgba(0, 0, 0, 0.08);
 }
@@ -191,7 +191,7 @@
     transform: translateX(4px);
 }
 
-/* --- Mobile Responsiveness --- */
+ 
 @media (max-width: 992px) {
     .featured-card {
         flex-direction: column;
@@ -216,26 +216,26 @@
     }
 }
 
-/* ==================== MAIN ARTICLE GRID ==================== */
+ 
 .bg-light-gray {
     background-color: #F8F9FA;
 }
 
-/* --- Category Filters --- */
+ 
 .article-filters {
     display: flex;
     align-items: center;
     gap: 1rem;
     overflow-x: auto;
     padding-bottom: 1rem;
-    /* Space for scrollbar on mobile */
+     
     scrollbar-width: none;
-    /* Hide scrollbar Firefox */
+     
 }
 
 .article-filters::-webkit-scrollbar {
     display: none;
-    /* Hide scrollbar Chrome/Safari */
+     
 }
 
 .filter-btn {
@@ -262,14 +262,14 @@
     border-color: var(--clr-text-heading, #1A202C);
 }
 
-/* --- The Grid --- */
+ 
 .article-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
     gap: 2.5rem;
 }
 
-/* --- Article Cards --- */
+ 
 .article-card {
     background-color: #FFFFFF;
     border-radius: 16px;
@@ -285,7 +285,7 @@
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.06);
 }
 
-/* Image & Scanner Effect */
+ 
 .card-image-wrapper {
     position: relative;
     height: 220px;
@@ -320,10 +320,10 @@
 
 .article-card:hover .hover-scanner {
     top: 100%;
-    /* Sweeps from top to bottom */
+     
 }
 
-/* Card Content */
+ 
 .card-content {
     padding: 2rem;
     display: flex;
@@ -392,7 +392,7 @@
     flex-grow: 1;
 }
 
-/* Typographic Author Avatars */
+ 
 .card-author {
     display: flex;
     align-items: center;
@@ -423,17 +423,17 @@
     color: var(--clr-text-heading);
 }
 
-/* Mobile Responsiveness */
+ 
 @media (max-width: 768px) {
     .article-grid {
         grid-template-columns: 1fr;
     }
 }
 
-/* ==================== STANDALONE NEWSLETTER SECTION ==================== */
+ 
 .newsletter-section {
     background-color: #050505;
-    /* Seamlessly blends if placed next to another dark section */
+     
     position: relative;
 }
 
@@ -450,7 +450,7 @@
     border: 1px solid rgba(255, 255, 255, 0.08);
 }
 
-/* Ambient Background Glows */
+ 
 .glow-orb {
     position: absolute;
     width: 350px;
@@ -474,7 +474,7 @@
     background-color: var(--clr-primary, #F27622);
 }
 
-/* Trap Content */
+ 
 .trap-content {
     flex: 1;
     position: relative;
@@ -507,7 +507,7 @@
     max-width: 90%;
 }
 
-/* Form Container */
+ 
 .trap-form-container {
     flex: 1;
     position: relative;
@@ -526,14 +526,14 @@
     transition: border-color var(--transition-fast), background-color var(--transition-fast), box-shadow var(--transition-fast);
 }
 
-/* Input Focus State */
+ 
 .input-group:focus-within {
     border-color: var(--clr-primary);
     background-color: rgba(255, 255, 255, 0.08);
     box-shadow: 0 0 20px rgba(0, 229, 255, 0.1);
 }
 
-/* Error State */
+ 
 .input-group.error-state {
     border-color: #FF5F56;
     background-color: rgba(255, 95, 86, 0.05);
@@ -565,7 +565,7 @@
     font-weight: 600;
 }
 
-/* Validation Message Text */
+ 
 .validation-message {
     margin-top: 1rem;
     font-size: 0.95rem;
@@ -588,7 +588,7 @@
     height: auto;
 }
 
-/* Mobile Responsiveness */
+ 
 @media (max-width: 992px) {
     .newsletter-trap {
         flex-direction: column;

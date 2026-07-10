@@ -1,4 +1,4 @@
-// login.js - animated login UI + client-side form validation
+ 
 
 (function () {
   const prefersReducedMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -12,7 +12,7 @@
   const passwordToggleBtn = document.querySelector('.password-toggle');
   const passwordToggleIcon = passwordToggleBtn ? passwordToggleBtn.querySelector('i') : null;
 
-  // create/locate error elements
+ 
   const emailFieldWrap = emailInput ? emailInput.closest('.input-box') : null;
   const passwordFieldWrap = passwordInput ? passwordInput.closest('.input-box') : null;
 
@@ -74,7 +74,7 @@
 
   function validatePassword(value) {
     const v = String(value);
-    // at least 8 chars, at least 1 letter and 1 number
+ 
     return v.length >= 8 && /[A-Za-z]/.test(v) && /\d/.test(v);
   }
 
@@ -106,21 +106,21 @@
     return ok;
   }
 
-  // Password visibility toggle
+ 
   if (passwordToggleBtn && passwordInput) {
     passwordToggleBtn.addEventListener('click', () => {
       const isPassword = passwordInput.getAttribute('type') === 'password';
       passwordInput.setAttribute('type', isPassword ? 'text' : 'password');
 
       if (passwordToggleIcon) {
-        // swap icons
+ 
         passwordToggleIcon.classList.toggle('fa-eye', isPassword);
         passwordToggleIcon.classList.toggle('fa-eye-slash', !isPassword);
       }
     });
   }
 
-  // Live validation
+ 
   if (emailInput) {
     emailInput.addEventListener('input', () => {
       if (!emailErrorEl) return;
@@ -147,18 +147,18 @@
         return;
       }
 
-      // Demo success state (no backend)
+ 
       const emailVal = emailInput ? emailInput.value.trim() : 'user';
       setFormMsg('success', `Signed in successfully (demo). Welcome, ${emailVal}!`);
 
-      // Optional: clear password field after success
+ 
       if (passwordInput) passwordInput.value = '';
       if (passwordErrorEl) passwordErrorEl.style.display = 'none';
       if (passwordInput) passwordInput.classList.remove('error-field');
     });
   }
 
-  // GSAP entrance animation
+ 
   function runAnimations() {
     if (prefersReducedMotion) return;
     if (typeof gsap === 'undefined') return;
@@ -177,7 +177,7 @@
       .to([left, right].filter(Boolean), { opacity: 1, y: 0, duration: 0.8, stagger: 0.12 }, '-=0.35')
       .to(card, { opacity: 1, scale: 1, duration: 0.6 }, '-=0.5');
 
-    // Subtle floating gradients (if present)
+ 
     const circles = document.querySelectorAll('.gradient-circle, .bg-grid, .gradient-circle');
     if (circles && circles.length) {
       gsap.fromTo(
@@ -188,7 +188,7 @@
     }
   }
 
-  // wait a tick for layout
+ 
   window.addEventListener('load', () => {
     runAnimations();
   });
