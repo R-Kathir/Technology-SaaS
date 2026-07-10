@@ -1,0 +1,1601 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Stackly Admin Dashboard</title>
+
+    <link rel="stylesheet" href="shared.css">
+    <link rel="stylesheet" href="dashboard.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="dashboard-layout">
+
+        <!-- =========================
+            SIDEBAR
+    ========================== -->
+
+        <aside class="sidebar">
+
+            <div class="sidebar-top">
+
+                <a href="index.html" class="dashboard-logo">
+                    <img src="./assets/stackly-logo.webp" alt="logo" class="logo" loading="lazy">
+                </a>
+
+            </div>
+
+            <nav class="sidebar-menu">
+                <div class="nav-top">
+                    <div class="menu-group">
+                        <button id="dashboardBtn" class="menu-title active">
+                            <span>
+                                <i class="fa-solid fa-chart-line"></i>
+                                Dashboard
+                            </span>
+                        </button>
+
+                    </div>
+                    <!-- <div class="menu-group">
+                    <button id="userBtn" class="menu-title"> <span>
+                            <i class="fa-solid fa-users"></i>
+                            User Management
+                        </span>
+                    </button>
+                </div> -->
+                    <div class="menu-group">
+                        <button id="infraBtn" class="menu-title"> <span>
+                                <i class="fa-solid fa-server"></i>
+                                Infrastructure
+                            </span>
+                        </button>
+                    </div>
+                    <div class="menu-group">
+                        <button id="projectBtn" class="menu-title"> <span>
+                                <i class="fa-solid fa-folder-open"></i>
+                                Projects
+                            </span>
+                        </button>
+                    </div>
+                    <div class="menu-group">
+
+                        <button id="monitorBtn" class="menu-title"> <span>
+                                <i class="fa-solid fa-chart-column"></i>
+                                Monitoring
+                            </span>
+                        </button>
+                    </div>
+                    <div class="menu-group">
+                        <button id="settingBtn" class="menu-title"> <span>
+                                <i class="fa-solid fa-gear"></i>
+                                Settings
+                            </span>
+                        </button>
+                    </div>
+                </div>
+                <div class="nav-footer">
+                    <div class="profile-box">
+
+                        <img src="./assets/avatar.webp" alt="Admin">
+
+                        <div>
+
+                            <h5 id="username">Admin</h5>
+
+                            <span id="user-email">
+
+                                admin@company.com
+
+                            </span>
+                        </div>
+                    </div>
+                    <div class="logout-btn">
+
+                        <a href="index.html">
+
+                            <i class="fa-solid fa-right-from-bracket"></i>
+
+                            <span>Logout</span>
+
+                        </a>
+
+                    </div>
+                </div>
+
+            </nav>
+        </aside>
+
+        <!-- =========================
+            MAIN
+    ========================== -->
+
+        <main class="dashboard-main">
+
+            <!-- Header -->
+
+            <header class="dashboard-header">
+
+                <button class="sidebar-toggle">
+
+                    <i class="fa-solid fa-bars"></i>
+
+                </button>
+
+
+                <span class="welcome-tag">
+                    Welcome Back Admin 👋
+                </span>
+
+                <div class="header-right">
+
+                    <button onclick="window.location.href='404page.html'" class="icon-btn">
+
+                        <i class="fa-regular fa-bell"></i>
+
+                    </button>
+
+                    <button onclick="window.location.href='404page.html'" class="icon-btn">
+
+                        <i class="fa-regular fa-envelope"></i>
+
+                    </button>
+
+
+
+                </div>
+
+            </header>
+            <section id="dashboardPage" class="page active-page">
+
+                <section class="dashboard-content">
+                    <!-- Welcome -->
+
+                    <div class="welcome-banner">
+
+                        <div>
+
+
+                            <h1>
+                                Enterprise Infrastructure Dashboard
+                            </h1>
+
+                            <p>
+                                Monitor cloud infrastructure, users, projects and business
+                                performance from one centralized platform.
+                            </p>
+
+                        </div>
+
+                        <button onclick="window.location.href='404page.html'" class="primary-btn">
+
+                            <i class="fa-solid fa-plus"></i>
+
+                            New Project
+
+                        </button>
+
+                    </div>
+
+                    <!-- ================= KPI ================= -->
+
+                    <section class="stats-grid">
+
+                        <div class="stat-card">
+
+                            <div class="stat-icon orange">
+                                <i class="fa-solid fa-users"></i>
+                            </div>
+
+                            <div class="stat-content">
+
+                                <h5>Total Users</h5>
+
+                                <h2>12,540</h2>
+
+                                <span class="success">
+
+                                    <i class="fa-solid fa-arrow-up"></i>
+
+                                    +12.4%
+
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                        <div class="stat-card">
+
+                            <div class="stat-icon blue">
+                                <i class="fa-solid fa-server"></i>
+                            </div>
+
+                            <div class="stat-content">
+
+                                <h5>Servers</h5>
+
+                                <h2>148</h2>
+
+                                <span class="success">
+
+                                    99.9% Uptime
+
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                        <div class="stat-card">
+
+                            <div class="stat-icon green">
+                                <i class="fa-solid fa-folder-open"></i>
+                            </div>
+
+                            <div class="stat-content">
+
+                                <h5>Projects</h5>
+
+                                <h2>284</h2>
+
+                                <span class="success">
+
+                                    32 Active
+
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                        <div class="stat-card">
+
+                            <div class="stat-icon purple">
+                                <i class="fa-solid fa-dollar-sign"></i>
+                            </div>
+
+                            <div class="stat-content">
+
+                                <h5>Revenue</h5>
+
+                                <h2>$284K</h2>
+
+                                <span class="success">
+
+                                    +8.7%
+
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </section>
+
+                    <!-- ================= Charts ================= -->
+
+                    <section class="dashboard-row">
+
+                        <div class="chart-card">
+
+                            <div class="card-head">
+
+                                <h3>Revenue Analytics</h3>
+
+                                <button onclick="window.location.href='404page.html'" class="primary-btn">
+
+                                    Monthly
+
+                                </button>
+
+                            </div>
+
+                            <div class="chart-placeholder">
+
+                                Revenue Chart
+
+                            </div>
+
+                        </div>
+
+                        <div class="system-status">
+
+                            <div class="card-head">
+
+                                <h3>
+
+                                    Infrastructure Status
+
+                                </h3>
+
+                            </div>
+
+                            <div class="status-item">
+
+                                <span>
+
+                                    Cloud Servers
+
+                                </span>
+
+                                <strong class="online">
+
+                                    Online
+
+                                </strong>
+
+                            </div>
+
+                            <div class="status-item">
+
+                                <span>
+
+                                    Storage
+
+                                </span>
+
+                                <strong class="online">
+
+                                    Healthy
+
+                                </strong>
+
+                            </div>
+
+                            <div class="status-item">
+
+                                <span>
+
+                                    API Gateway
+
+                                </span>
+
+                                <strong class="warning">
+
+                                    Maintenance
+
+                                </strong>
+
+                            </div>
+
+                            <div class="status-item">
+
+                                <span>
+
+                                    Database
+
+                                </span>
+
+                                <strong class="online">
+
+                                    Running
+
+                                </strong>
+
+                            </div>
+
+                        </div>
+
+                    </section>
+
+                    <!-- ================= Table ================= -->
+
+                    <section class="dashboard-row">
+
+                        <div class="table-card">
+
+                            <div class="card-head">
+
+                                <h3>
+
+                                    Recent Projects
+
+                                </h3>
+
+                                <a href="404page.html">
+
+                                    View All
+
+                                </a>
+
+                            </div>
+
+                            <table>
+
+                                <thead>
+
+                                    <tr>
+
+                                        <th>Project</th>
+
+                                        <th>Manager</th>
+
+                                        <th>Status</th>
+
+                                        <th>Date</th>
+
+                                    </tr>
+
+                                </thead>
+
+                                <tbody>
+
+                                    <tr>
+
+                                        <td>Cloud Migration</td>
+
+                                        <td>John Smith</td>
+
+                                        <td>
+
+                                            <span class="badge success">
+
+                                                Active
+
+                                            </span>
+
+                                        </td>
+
+                                        <td>09 Jul 2026</td>
+
+                                    </tr>
+
+                                    <tr>
+
+                                        <td>Infrastructure Upgrade</td>
+
+                                        <td>David Lee</td>
+
+                                        <td>
+
+                                            <span class="badge pending">
+
+                                                Pending
+
+                                            </span>
+
+                                        </td>
+
+                                        <td>08 Jul 2026</td>
+
+                                    </tr>
+
+                                    <tr>
+
+                                        <td>Server Monitoring</td>
+
+                                        <td>Emma Brown</td>
+
+                                        <td>
+
+                                            <span class="badge success">
+
+                                                Completed
+
+                                            </span>
+
+                                        </td>
+
+                                        <td>07 Jul 2026</td>
+
+                                    </tr>
+
+                                </tbody>
+
+                            </table>
+
+                        </div>
+
+                        <!-- Notifications -->
+
+                        <div class="notification-card">
+
+                            <div class="card-head">
+
+                                <h3>
+
+                                    Notifications
+
+                                </h3>
+
+                            </div>
+
+                            <div class="notification">
+
+                                <i class="fa-solid fa-circle-check"></i>
+
+                                <div>
+
+                                    <h5>
+
+                                        Deployment Successful
+
+                                    </h5>
+
+                                    <span>
+
+                                        Production server updated.
+
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+                            <div class="notification">
+
+                                <i class="fa-solid fa-triangle-exclamation"></i>
+
+                                <div>
+
+                                    <h5>
+
+                                        Security Update
+
+                                    </h5>
+
+                                    <span>
+
+                                        New firewall rules applied.
+
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+                            <div class="notification">
+
+                                <i class="fa-solid fa-envelope"></i>
+
+                                <div>
+
+                                    <h5>
+
+                                        Support Ticket
+
+                                    </h5>
+
+                                    <span>
+
+                                        New client message received.
+
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </section>
+
+                </section>
+            </section>
+            <section id="userPage" class="page">
+
+                <div class="page-header">
+
+                    <div>
+
+                        <h1>User Management</h1>
+
+                        <p>Manage administrators, employees and clients.</p>
+
+                    </div>
+
+                    <button onclick="window.location.href='404page.html'" class="primary-btn">
+
+                        <i class="fa-solid fa-plus"></i>
+
+                        Add User
+
+                    </button>
+
+                </div>
+
+                <!-- Stats -->
+
+                <div class="stats-grid">
+
+                    <div class="stat-card">
+
+                        <div class="stat-icon orange">
+
+                            <i class="fa-solid fa-users"></i>
+
+                        </div>
+
+                        <div class="stat-content">
+
+                            <h5>Total Users</h5>
+
+                            <h2>1,254</h2>
+
+                        </div>
+
+                    </div>
+
+                    <div class="stat-card">
+
+                        <div class="stat-icon blue">
+
+                            <i class="fa-solid fa-user-check"></i>
+
+                        </div>
+
+                        <div class="stat-content">
+
+                            <h5>Active Users</h5>
+
+                            <h2>1,186</h2>
+
+                        </div>
+
+                    </div>
+
+                    <div class="stat-card">
+
+                        <div class="stat-icon green">
+
+                            <i class="fa-solid fa-user-plus"></i>
+
+                        </div>
+
+                        <div class="stat-content">
+
+                            <h5>New Users</h5>
+
+                            <h2>48</h2>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- User Table -->
+
+                <div class="table-card">
+
+                    <div class="card-head">
+
+                        <h3>Recent Users</h3>
+
+                        <button onclick="window.location.href='404page.html'" class="primary-btn">Export</button>
+
+                    </div>
+
+                    <table>
+
+                        <thead>
+
+                            <tr>
+
+                                <th>Name</th>
+                                <th>Email</th>
+                                <th>Role</th>
+                                <th>Status</th>
+
+                            </tr>
+
+                        </thead>
+
+                        <tbody>
+
+                            <tr>
+
+                                <td>John Smith</td>
+
+                                <td>john@stackly.com</td>
+
+                                <td>Administrator</td>
+
+                                <td><span class="badge success">Active</span></td>
+
+                            </tr>
+
+                            <tr>
+
+                                <td>Emma Wilson</td>
+
+                                <td>emma@stackly.com</td>
+
+                                <td>Manager</td>
+
+                                <td><span class="badge pending">Pending</span></td>
+
+                            </tr>
+
+                            <tr>
+
+                                <td>David Lee</td>
+
+                                <td>david@stackly.com</td>
+
+                                <td>Developer</td>
+
+                                <td><span class="badge success">Active</span></td>
+
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </section>
+            <section id="infraPage" class="page">
+
+                <div class="page-header">
+
+                    <div>
+
+                        <h1>Infrastructure</h1>
+
+                        <p>
+                            Monitor and manage your enterprise cloud infrastructure from one place.
+                        </p>
+
+                    </div>
+
+                    <button onclick="window.location.href='404page.html'" class="primary-btn">
+
+                        <i class="fa-solid fa-plus"></i>
+
+                        Add Server
+
+                    </button>
+
+                </div>
+
+                <!-- Infrastructure Stats -->
+
+                <div class="stats-grid">
+
+                    <div class="stat-card">
+
+                        <div class="stat-icon orange">
+                            <i class="fa-solid fa-server"></i>
+                        </div>
+
+                        <div class="stat-content">
+
+                            <h5>Total Servers</h5>
+
+                            <h2>148</h2>
+
+                            <span class="success">+12 this month</span>
+
+                        </div>
+
+                    </div>
+
+                    <div class="stat-card">
+
+                        <div class="stat-icon blue">
+                            <i class="fa-solid fa-cloud"></i>
+                        </div>
+
+                        <div class="stat-content">
+
+                            <h5>Cloud Services</h5>
+
+                            <h2>36</h2>
+
+                            <span class="success">Running</span>
+
+                        </div>
+
+                    </div>
+
+                    <div class="stat-card">
+
+                        <div class="stat-icon green">
+                            <i class="fa-solid fa-hard-drive"></i>
+                        </div>
+
+                        <div class="stat-content">
+
+                            <h5>Storage Used</h5>
+
+                            <h2>78%</h2>
+
+                            <span class="warning">3.8 TB / 5 TB</span>
+
+                        </div>
+
+                    </div>
+
+                    <div class="stat-card">
+
+                        <div class="stat-icon purple">
+                            <i class="fa-solid fa-shield-halved"></i>
+                        </div>
+
+                        <div class="stat-content">
+
+                            <h5>Security Score</h5>
+
+                            <h2>98%</h2>
+
+                            <span class="success">Excellent</span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Server Status -->
+
+                <section class="dashboard-row">
+
+                    <div class="table-card">
+
+                        <div class="card-head">
+
+                            <h3>Server Infrastructure</h3>
+
+                            <button onclick="window.location.href='404page.html'" class="primary-btn">View All</button>
+
+                        </div>
+
+                        <table>
+
+                            <thead>
+
+                                <tr>
+
+                                    <th>Server</th>
+                                    <th>Location</th>
+                                    <th>CPU</th>
+                                    <th>Memory</th>
+                                    <th>Status</th>
+
+                                </tr>
+
+                            </thead>
+
+                            <tbody>
+
+                                <tr>
+
+                                    <td>Production-01</td>
+
+                                    <td>Singapore</td>
+
+                                    <td>48%</td>
+
+                                    <td>64 GB</td>
+
+                                    <td><span class="badge success">Online</span></td>
+
+                                </tr>
+
+                                <tr>
+
+                                    <td>Database-02</td>
+
+                                    <td>London</td>
+
+                                    <td>82%</td>
+
+                                    <td>128 GB</td>
+
+                                    <td><span class="badge pending">High Load</span></td>
+
+                                </tr>
+
+                                <tr>
+
+                                    <td>Backup-03</td>
+
+                                    <td>New York</td>
+
+                                    <td>24%</td>
+
+                                    <td>32 GB</td>
+
+                                    <td><span class="badge success">Healthy</span></td>
+
+                                </tr>
+
+                                <tr>
+
+                                    <td>Edge-04</td>
+
+                                    <td>Tokyo</td>
+
+                                    <td>36%</td>
+
+                                    <td>64 GB</td>
+
+                                    <td><span class="badge success">Running</span></td>
+
+                                </tr>
+
+                            </tbody>
+
+                        </table>
+
+                    </div>
+
+                    <!-- Right Side -->
+
+                    <div class="notification-card">
+
+                        <div class="card-head">
+
+                            <h3>Infrastructure Health</h3>
+
+                        </div>
+
+                        <div class="notification">
+
+                            <i class="fa-solid fa-circle-check"></i>
+
+                            <div>
+
+                                <h5>All Servers Online</h5>
+
+                                <span>
+                                    No outages detected in the last 24 hours.
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                        <div class="notification">
+
+                            <i class="fa-solid fa-cloud-arrow-up"></i>
+
+                            <div>
+
+                                <h5>Cloud Backup</h5>
+
+                                <span>
+                                    Daily backup completed successfully.
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                        <div class="notification">
+
+                            <i class="fa-solid fa-shield-halved"></i>
+
+                            <div>
+
+                                <h5>Firewall Status</h5>
+
+                                <span>
+                                    Security policies are active.
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                        <div class="notification">
+
+                            <i class="fa-solid fa-microchip"></i>
+
+                            <div>
+
+                                <h5>CPU Monitoring</h5>
+
+                                <span>
+                                    Average CPU utilization: 41%.
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+            </section>
+            <section id="projectPage" class="page">
+
+                <div class="page-header">
+
+                    <div>
+
+                        <h1>Projects</h1>
+
+                        <p>
+                            Track enterprise projects, milestones and team collaboration.
+                        </p>
+
+                    </div>
+
+                    <button onclick="window.location.href='404page.html'" class="primary-btn">
+
+                        <i class="fa-solid fa-plus"></i>
+
+                        New Project
+
+                    </button>
+
+                </div>
+
+                <div class="stats-grid">
+
+                    <div class="stat-card">
+
+                        <div class="stat-icon orange">
+
+                            <i class="fa-solid fa-folder-open"></i>
+
+                        </div>
+
+                        <div class="stat-content">
+
+                            <h5>Total Projects</h5>
+
+                            <h2>248</h2>
+
+                            <span class="success">+18 This Month</span>
+
+                        </div>
+
+                    </div>
+
+                    <div class="stat-card">
+
+                        <div class="stat-icon blue">
+
+                            <i class="fa-solid fa-list-check"></i>
+
+                        </div>
+
+                        <div class="stat-content">
+
+                            <h5>Active Projects</h5>
+
+                            <h2>96</h2>
+
+                            <span class="success">Running</span>
+
+                        </div>
+
+                    </div>
+
+                    <div class="stat-card">
+
+                        <div class="stat-icon green">
+
+                            <i class="fa-solid fa-circle-check"></i>
+
+                        </div>
+
+                        <div class="stat-content">
+
+                            <h5>Completed</h5>
+
+                            <h2>132</h2>
+
+                            <span class="success">98% Success</span>
+
+                        </div>
+
+                    </div>
+
+                    <div class="stat-card">
+
+                        <div class="stat-icon purple">
+
+                            <i class="fa-solid fa-users"></i>
+
+                        </div>
+
+                        <div class="stat-content">
+
+                            <h5>Team Members</h5>
+
+                            <h2>184</h2>
+
+                            <span class="success">Across Projects</span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <section class="dashboard-row">
+
+                    <div class="table-card">
+
+                        <div class="card-head">
+
+                            <h3>Project Overview</h3>
+
+                            <button onclick="window.location.href='404page.html'" class="primary-btn">View All</button>
+
+                        </div>
+
+                        <table>
+
+                            <thead>
+
+                                <tr>
+
+                                    <th>Project</th>
+                                    <th>Manager</th>
+                                    <th>Progress</th>
+                                    <th>Status</th>
+
+                                </tr>
+
+                            </thead>
+
+                            <tbody>
+
+                                <tr>
+
+                                    <td>Cloud Migration</td>
+                                    <td>John Smith</td>
+                                    <td>82%</td>
+                                    <td><span class="badge success">Running</span></td>
+
+                                </tr>
+
+                                <tr>
+
+                                    <td>Infrastructure Upgrade</td>
+                                    <td>Emma Wilson</td>
+                                    <td>65%</td>
+                                    <td><span class="badge pending">In Progress</span></td>
+
+                                </tr>
+
+                                <tr>
+
+                                    <td>Security Audit</td>
+                                    <td>David Lee</td>
+                                    <td>100%</td>
+                                    <td><span class="badge success">Completed</span></td>
+
+                                </tr>
+
+                            </tbody>
+
+                        </table>
+
+                    </div>
+
+                    <div class="notification-card">
+
+                        <div class="card-head">
+
+                            <h3>Upcoming Milestones</h3>
+
+                        </div>
+
+                        <div class="notification">
+
+                            <i class="fa-solid fa-calendar-check"></i>
+
+                            <div>
+
+                                <h5>Cloud Deployment</h5>
+
+                                <span>Scheduled for July 15</span>
+
+                            </div>
+
+                        </div>
+
+                        <div class="notification">
+
+                            <i class="fa-solid fa-code-branch"></i>
+
+                            <div>
+
+                                <h5>Version Release</h5>
+
+                                <span>v2.4.0 Deployment</span>
+
+                            </div>
+
+                        </div>
+
+                        <div class="notification">
+
+                            <i class="fa-solid fa-users"></i>
+
+                            <div>
+
+                                <h5>Client Meeting</h5>
+
+                                <span>Friday • 11:00 AM</span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+            </section>
+            <section id="monitorPage" class="page">
+
+                <div class="page-header">
+
+                    <div>
+
+                        <h1>Monitoring</h1>
+
+                        <p>
+                            Monitor server health, infrastructure performance and alerts in real time.
+                        </p>
+
+                    </div>
+
+                    <button onclick="window.location.href='404page.html'" class="primary-btn">
+
+                        <i class="fa-solid fa-arrows-rotate"></i>
+
+                        Refresh Status
+
+                    </button>
+
+                </div>
+
+                <div class="stats-grid">
+
+                    <div class="stat-card">
+
+                        <div class="stat-icon orange">
+
+                            <i class="fa-solid fa-microchip"></i>
+
+                        </div>
+
+                        <div class="stat-content">
+
+                            <h5>CPU Usage</h5>
+
+                            <h2>46%</h2>
+
+                            <span class="success">Normal</span>
+
+                        </div>
+
+                    </div>
+
+                    <div class="stat-card">
+
+                        <div class="stat-icon blue">
+
+                            <i class="fa-solid fa-memory"></i>
+
+                        </div>
+
+                        <div class="stat-content">
+
+                            <h5>Memory</h5>
+
+                            <h2>68%</h2>
+
+                            <span class="warning">Moderate</span>
+
+                        </div>
+
+                    </div>
+
+                    <div class="stat-card">
+
+                        <div class="stat-icon green">
+
+                            <i class="fa-solid fa-hard-drive"></i>
+
+                        </div>
+
+                        <div class="stat-content">
+
+                            <h5>Storage</h5>
+
+                            <h2>3.8 TB</h2>
+
+                            <span class="success">Available</span>
+
+                        </div>
+
+                    </div>
+
+                    <div class="stat-card">
+
+                        <div class="stat-icon purple">
+
+                            <i class="fa-solid fa-heart-pulse"></i>
+
+                        </div>
+
+                        <div class="stat-content">
+
+                            <h5>System Health</h5>
+
+                            <h2>99.9%</h2>
+
+                            <span class="success">Excellent</span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <section class="dashboard-row">
+
+                    <div class="table-card">
+
+                        <div class="card-head">
+
+                            <h3>Server Performance</h3>
+
+                            <button onclick="window.location.href='404page.html'" class="primary-btn">Export</button>
+
+                        </div>
+
+                        <table>
+
+                            <thead>
+
+                                <tr>
+
+                                    <th>Server</th>
+                                    <th>CPU</th>
+                                    <th>Memory</th>
+                                    <th>Network</th>
+                                    <th>Status</th>
+
+                                </tr>
+
+                            </thead>
+
+                            <tbody>
+
+                                <tr>
+
+                                    <td>Production-01</td>
+                                    <td>48%</td>
+                                    <td>62%</td>
+                                    <td>Healthy</td>
+                                    <td><span class="badge success">Online</span></td>
+
+                                </tr>
+
+                                <tr>
+
+                                    <td>Database-02</td>
+                                    <td>83%</td>
+                                    <td>91%</td>
+                                    <td>Busy</td>
+                                    <td><span class="badge pending">Warning</span></td>
+
+                                </tr>
+
+                                <tr>
+
+                                    <td>Backup-03</td>
+                                    <td>22%</td>
+                                    <td>40%</td>
+                                    <td>Healthy</td>
+                                    <td><span class="badge success">Online</span></td>
+
+                                </tr>
+
+                            </tbody>
+
+                        </table>
+
+                    </div>
+
+                    <div class="notification-card">
+
+                        <div class="card-head">
+
+                            <h3>Live Alerts</h3>
+
+                        </div>
+
+                        <div class="notification">
+
+                            <i class="fa-solid fa-circle-check"></i>
+
+                            <div>
+
+                                <h5>Server Stable</h5>
+
+                                <span>Production server operating normally.</span>
+
+                            </div>
+
+                        </div>
+
+                        <div class="notification">
+
+                            <i class="fa-solid fa-triangle-exclamation"></i>
+
+                            <div>
+
+                                <h5>High CPU Usage</h5>
+
+                                <span>Database server reached 83% CPU.</span>
+
+                            </div>
+
+                        </div>
+
+                        <div class="notification">
+
+                            <i class="fa-solid fa-cloud-arrow-up"></i>
+
+                            <div>
+
+                                <h5>Backup Completed</h5>
+
+                                <span>Cloud backup finished successfully.</span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+            </section>
+            <section id="settingPage" class="page">
+
+                <div class="page-header">
+
+                    <div>
+
+                        <h1>Settings</h1>
+
+                        <p>
+                            Manage application preferences, account settings and system configuration.
+                        </p>
+
+                    </div>
+
+                    <button onclick="window.location.href='404page.html'" class="primary-btn">
+
+                        <i class="fa-solid fa-floppy-disk"></i>
+
+                        Save Changes
+
+                    </button>
+
+                </div>
+
+                <!-- Settings Cards -->
+
+                <div class="dashboard-row">
+
+                    <!-- Profile Settings -->
+
+                    <div class="table-card">
+
+                        <div class="card-head">
+
+                            <h3>Profile Information</h3>
+
+                        </div>
+
+                        <div class="setting-form">
+
+                            <div class="form-group">
+
+                                <label>Full Name</label>
+
+                                <input type="text" value="Administrator">
+
+                            </div>
+
+                            <div class="form-group">
+
+                                <label>Email Address</label>
+
+                                <input type="email" value="admin@stackly.com">
+
+                            </div>
+
+                            <div class="form-group">
+
+                                <label>Phone Number</label>
+
+                                <input type="text" value="+1 234 567 890">
+
+                            </div>
+
+                            <div class="form-group">
+
+                                <label>Role</label>
+
+                                <input type="text" value="System Administrator" readonly>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Quick Settings -->
+
+                    <div class="notification-card">
+
+                        <div class="card-head">
+
+                            <h3>Quick Preferences</h3>
+
+                        </div>
+
+                        <div class="setting-option">
+
+                            <span>Email Notifications</span>
+
+                            <input type="checkbox" checked>
+
+                        </div>
+
+                        <div class="setting-option">
+
+                            <span>Two-Factor Authentication</span>
+
+                            <input type="checkbox" checked>
+
+                        </div>
+
+                        <div class="setting-option">
+
+                            <span>Auto Backup</span>
+
+                            <input type="checkbox">
+
+                        </div>
+
+                        <div class="setting-option">
+
+                            <span>Maintenance Mode</span>
+
+                            <input type="checkbox">
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </section>
+        </main>
+
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="dashboard.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,1351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Stackly Client Dashboard</title>
+
+    <link rel="stylesheet" href="shared.css">
+    <link rel="stylesheet" href="client-dashboard.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+    <div class="dashboard-layout">
+        <aside class="sidebar">
+
+            <div class="sidebar-top">
+
+                <a href="index.html" class="dashboard-logo">
+                    <img src="./assets/stackly-logo.webp" alt="logo" class="logo" loading="lazy">
+                </a>
+
+            </div>
+            <nav class="sidebar-menu">
+                <div class="nav-top">
+                    <div class="menu-group">
+                        <button id="dashboardBtn" class="menu-title active">
+                            <span>
+                                <i class="fa-solid fa-gauge-high"></i>
+                                Dashboard
+                            </span>
+                        </button>
+                    </div>
+                    <div class="menu-group">
+                        <button id="servicesBtn" class="menu-title">
+                            <span>
+                                <i class="fa-solid fa-cubes"></i>
+                                My Services
+                            </span>
+                        </button>
+                    </div>
+                    <div class="menu-group">
+                        <button id="projectsBtn" class="menu-title">
+                            <span>
+                                <i class="fa-solid fa-folder-open"></i>
+                                Projects
+                            </span>
+                        </button>
+                    </div>
+                    <div class="menu-group">
+                        <button id="documentsBtn" class="menu-title">
+                            <span>
+                                <i class="fa-solid fa-file-lines"></i>
+                                Documents
+                            </span>
+                        </button>
+                    </div>
+                    <div class="menu-group">
+                        <button id="notificationsBtn" class="menu-title">
+                            <span>
+
+                                <i class="fa-solid fa-bell"></i>
+
+                                Notifications
+
+                            </span>
+
+                        </button>
+
+                    </div>
+
+                    <div class="menu-group">
+
+                        <button id="profileBtn" class="menu-title">
+
+                            <span>
+
+                                <i class="fa-solid fa-user"></i>
+
+                                My Profile
+
+                            </span>
+
+                        </button>
+
+                    </div>
+                </div>
+                <div class="nav-footer">
+                    <div class="profile-box">
+
+                        <img src="./assets/avatar.webp" alt="Client">
+
+                        <div>
+
+                            <h5 id="username">John Anderson</h5>
+
+                            <span id="user-email">
+
+                                john@company.com
+
+                            </span>
+
+                        </div>
+
+                        <!-- <i class="fa-solid fa-chevron-down"></i> -->
+
+                    </div>
+                    <div class="logout-btn">
+
+                        <a href="index.html">
+
+                            <i class="fa-solid fa-right-from-bracket"></i>
+
+                            <span>Logout</span>
+
+                        </a>
+
+                    </div>
+                </div>
+            </nav>
+
+        </aside>
+
+        <!--=================================
+            MAIN
+    =================================-->
+
+        <main class="dashboard-main">
+
+            <!-- Header -->
+
+            <header class="dashboard-header">
+
+                <button class="sidebar-toggle">
+
+                    <i class="fa-solid fa-bars"></i>
+
+                </button>
+
+                <span class="welcome-tag">
+
+                    Welcome Back 👋
+
+                </span>
+
+                <div class="header-right">
+
+                    <button onclick="window.location.href='404page.html'" class="icon-btn">
+
+                        <i class="fa-regular fa-bell"></i>
+
+                    </button>
+
+                    <button onclick="window.location.href='404page.html'" class="icon-btn">
+
+                        <i class="fa-regular fa-envelope"></i>
+
+                    </button>
+
+
+
+                </div>
+
+            </header>
+
+            <section id="dashboardPage" class="page active-page">
+
+                <section class="dashboard-content">
+
+                    <!-- Welcome -->
+
+                    <div class="welcome-banner">
+
+                        <div>
+
+
+
+                            <h1>
+
+                                Hello, John Anderson
+
+                            </h1>
+
+                            <p>
+
+                                Manage your infrastructure services,
+                                projects, invoices and support requests
+                                from your personalized dashboard.
+
+                            </p>
+
+                        </div>
+
+                        <button onclick="window.location.href='404page.html'" class="primary-btn">
+
+                            <i class="fa-solid fa-headset"></i>
+
+                            Contact Support
+
+                        </button>
+
+                    </div>
+
+                    <div class="stats-grid">
+
+                        <div class="stat-card">
+
+                            <div class="stat-icon orange">
+
+                                <i class="fa-solid fa-folder-open"></i>
+
+                            </div>
+
+                            <div class="stat-content">
+
+                                <h5>
+
+                                    Active Projects
+
+                                </h5>
+
+                                <h2>
+
+                                    08
+
+                                </h2>
+
+                                <span class="success">
+
+                                    +2 this month
+
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                        <div class="stat-card">
+
+                            <div class="stat-icon blue">
+
+                                <i class="fa-solid fa-cubes"></i>
+
+                            </div>
+
+                            <div class="stat-content">
+
+                                <h5>
+
+                                    Active Services
+
+                                </h5>
+
+                                <h2>
+
+                                    12
+
+                                </h2>
+
+                                <span class="success">
+
+                                    Running
+
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                        <div class="stat-card">
+
+                            <div class="stat-icon green">
+
+                                <i class="fa-solid fa-ticket"></i>
+
+                            </div>
+
+                            <div class="stat-content">
+
+                                <h5>
+
+                                    Open Tickets
+
+                                </h5>
+
+                                <h2>
+
+                                    03
+
+                                </h2>
+
+                                <span class="warning">
+
+                                    Needs Attention
+
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                        <div class="stat-card">
+
+                            <div class="stat-icon purple">
+
+                                <i class="fa-solid fa-file-invoice-dollar"></i>
+
+                            </div>
+
+                            <div class="stat-content">
+
+                                <h5>
+
+                                    Pending Invoices
+
+                                </h5>
+
+                                <h2>
+
+                                    02
+
+                                </h2>
+
+                                <span class="warning">
+
+                                    Due in 5 Days
+
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </section>
+                <!--=================================
+INFRASTRUCTURE HEALTH
+==================================-->
+
+                <section class="dashboard-row">
+
+                    <div class="chart-card">
+
+                        <div class="card-head">
+
+                            <h3>Infrastructure Health</h3>
+
+                            <a href="404page.html">View Details</a>
+
+                        </div>
+
+                        <div class="health-grid">
+
+                            <div class="health-card">
+
+                                <i class="fa-solid fa-server"></i>
+
+                                <div>
+
+                                    <h4>Web Server</h4>
+
+                                    <span class="success">Healthy</span>
+
+                                </div>
+
+                            </div>
+
+                            <div class="health-card">
+
+                                <i class="fa-solid fa-database"></i>
+
+                                <div>
+
+                                    <h4>Database</h4>
+
+                                    <span class="success">Online</span>
+
+                                </div>
+
+                            </div>
+
+                            <div class="health-card">
+
+                                <i class="fa-solid fa-cloud"></i>
+
+                                <div>
+
+                                    <h4>Cloud Storage</h4>
+
+                                    <span class="success">Running</span>
+
+                                </div>
+
+                            </div>
+
+                            <div class="health-card">
+
+                                <i class="fa-solid fa-shield-halved"></i>
+
+                                <div>
+
+                                    <h4>Firewall</h4>
+
+                                    <span class="success">Protected</span>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </section>
+                <!--=================================
+RECENT ACTIVITIES
+==================================-->
+
+                <section class="dashboard-row">
+
+                    <div class="table-card">
+
+                        <div class="card-head">
+
+                            <h3>Recent Activities</h3>
+
+                            <a href="404page.html">View All</a>
+
+                        </div>
+
+                        <div class="activity-list">
+
+                            <div class="activity-item">
+
+                                <div class="activity-icon">
+
+                                    <i class="fa-solid fa-circle-check"></i>
+
+                                </div>
+
+                                <div>
+
+                                    <h4>Daily Backup Completed</h4>
+
+                                    <p>Today • 09:45 AM</p>
+
+                                </div>
+
+                            </div>
+
+                            <div class="activity-item">
+
+                                <div class="activity-icon">
+
+                                    <i class="fa-solid fa-file-invoice"></i>
+
+                                </div>
+
+                                <div>
+
+                                    <h4>Monthly Invoice Generated</h4>
+
+                                    <p>Today • 08:30 AM</p>
+
+                                </div>
+
+                            </div>
+
+                            <div class="activity-item">
+
+                                <div class="activity-icon">
+
+                                    <i class="fa-solid fa-server"></i>
+
+                                </div>
+
+                                <div>
+
+                                    <h4>Infrastructure Updated</h4>
+
+                                    <p>Yesterday • 07:20 PM</p>
+
+                                </div>
+
+                            </div>
+
+                            <div class="activity-item">
+
+                                <div class="activity-icon">
+
+                                    <i class="fa-solid fa-headset"></i>
+
+                                </div>
+
+                                <div>
+
+                                    <h4>Support Ticket Resolved</h4>
+
+                                    <p>2 Days Ago</p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </section>
+            </section>
+            <section id="servicesPage" class="page">
+
+                <section class="dashboard-row">
+
+                    <div class="chart-card">
+
+                        <div class="card-head">
+
+                            <h3>My Services</h3>
+
+                            <a href="404page.html">View All</a>
+
+                        </div>
+
+                        <div class="service-grid">
+
+                            <div class="service-card">
+
+                                <div class="service-icon">
+
+                                    <i class="fa-solid fa-cloud"></i>
+
+                                </div>
+
+                                <h4>Cloud Hosting</h4>
+
+                                <p>
+                                    High availability cloud infrastructure for your business applications.
+                                </p>
+
+                                <span class="badge success">
+                                    Active
+                                </span>
+
+                            </div>
+
+                            <div class="service-card">
+
+                                <div class="service-icon">
+
+                                    <i class="fa-solid fa-shield-halved"></i>
+
+                                </div>
+
+                                <h4>Managed Security</h4>
+
+                                <p>
+                                    Firewall, malware protection and continuous security monitoring.
+                                </p>
+
+                                <span class="badge success">
+                                    Protected
+                                </span>
+
+                            </div>
+
+                            <div class="service-card">
+
+                                <div class="service-icon">
+
+                                    <i class="fa-solid fa-server"></i>
+
+                                </div>
+
+                                <h4>Infrastructure</h4>
+
+                                <p>
+                                    Dedicated servers with scalable enterprise performance.
+                                </p>
+
+                                <span class="badge success">
+                                    Running
+                                </span>
+
+                            </div>
+
+                            <div class="service-card">
+
+                                <div class="service-icon">
+
+                                    <i class="fa-solid fa-database"></i>
+
+                                </div>
+
+                                <h4>Database Management</h4>
+
+                                <p>
+                                    Automated backup, monitoring and database optimization.
+                                </p>
+
+                                <span class="badge success">
+                                    Healthy
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+                <section class="dashboard-row">
+
+                    <div class="chart-card">
+
+                        <div class="card-head">
+
+                            <h3>Active Services</h3>
+
+                            <button onclick="window.location.href='404page.html'" class="primary-btn">View All</button>
+
+                        </div>
+
+                        <div class="service-grid">
+
+                            <div class="service-card">
+
+                                <div class="service-top">
+
+                                    <div class="service-icon">
+                                        <i class="fa-solid fa-cloud"></i>
+                                    </div>
+
+                                    <span class="badge success">
+                                        Active
+                                    </span>
+
+                                </div>
+
+                                <h4>Cloud Hosting</h4>
+
+                                <p>
+                                    Enterprise cloud hosting with scalable resources and automatic backup.
+                                </p>
+
+                                <div class="service-meta">
+
+                                    <span>Plan</span>
+
+                                    <strong>Enterprise</strong>
+
+                                </div>
+
+                                <div class="service-meta">
+
+                                    <span>Uptime</span>
+
+                                    <strong>99.99%</strong>
+
+                                </div>
+
+                                <button onclick="window.location.href='404page.html'" class="primary-btn">
+
+                                    Manage Service
+
+                                </button>
+
+                            </div>
+
+                            <div class="service-card">
+
+                                <div class="service-top">
+
+                                    <div class="service-icon">
+                                        <i class="fa-solid fa-shield-halved"></i>
+                                    </div>
+
+                                    <span class="badge success">
+                                        Protected
+                                    </span>
+
+                                </div>
+
+                                <h4>Managed Security</h4>
+
+                                <p>
+                                    Continuous monitoring, firewall management and malware protection.
+                                </p>
+
+                                <div class="service-meta">
+
+                                    <span>Plan</span>
+
+                                    <strong>Premium</strong>
+
+                                </div>
+
+                                <div class="service-meta">
+
+                                    <span>Last Scan</span>
+
+                                    <strong>Today</strong>
+
+                                </div>
+
+                                <button onclick="window.location.href='404page.html'" class="primary-btn">
+
+                                    View Security
+
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </section>
+                <section class="dashboard-row">
+
+                    <div class="table-card">
+
+                        <div class="card-head">
+
+                            <h3>Resource Allocation</h3>
+
+                        </div>
+
+                        <div class="resource-list">
+
+                            <div class="resource-item">
+
+                                <div class="resource-title">
+
+                                    <span>CPU Usage</span>
+
+                                    <strong>72%</strong>
+
+                                </div>
+
+                                <div class="progress-bar">
+
+                                    <div class="progress" style="width:72%;"></div>
+
+                                </div>
+
+                            </div>
+
+                            <div class="resource-item">
+
+                                <div class="resource-title">
+
+                                    <span>Memory</span>
+
+                                    <strong>65%</strong>
+
+                                </div>
+
+                                <div class="progress-bar">
+
+                                    <div class="progress" style="width:65%;"></div>
+
+                                </div>
+
+                            </div>
+
+                            <div class="resource-item">
+
+                                <div class="resource-title">
+
+                                    <span>Storage</span>
+
+                                    <strong>81%</strong>
+
+                                </div>
+
+                                <div class="progress-bar">
+
+                                    <div class="progress" style="width:81%;"></div>
+
+                                </div>
+
+                            </div>
+
+                            <div class="resource-item">
+
+                                <div class="resource-title">
+
+                                    <span>Bandwidth</span>
+
+                                    <strong>58%</strong>
+
+                                </div>
+
+                                <div class="progress-bar">
+
+                                    <div class="progress" style="width:58%;"></div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </section>
+            </section>
+            <section id="projectsPage" class="page">
+
+                <section class="dashboard-row">
+
+                    <div class="table-card">
+
+                        <div class="card-head">
+
+                            <h3>Active Projects</h3>
+
+                            <button onclick="window.location.href='404page.html'" class="primary-btn">View
+                                Projects</button>
+
+                        </div>
+
+                        <div class="project-list">
+
+                            <div class="project-card">
+
+                                <div class="project-top">
+
+                                    <h4>Cloud Migration</h4>
+
+                                    <span>78%</span>
+
+                                </div>
+
+                                <div class="progress-bar">
+
+                                    <div class="progress" style="width:78%;"></div>
+
+                                </div>
+
+                                <div class="project-footer">
+
+                                    <span>Manager : David Lee</span>
+
+                                    <span>15 Jul 2026</span>
+
+                                </div>
+
+                            </div>
+
+                            <div class="project-card">
+
+                                <div class="project-top">
+
+                                    <h4>Infrastructure Upgrade</h4>
+
+                                    <span>54%</span>
+
+                                </div>
+
+                                <div class="progress-bar">
+
+                                    <div class="progress" style="width:54%;"></div>
+
+                                </div>
+
+                                <div class="project-footer">
+
+                                    <span>Manager : Emma Wilson</span>
+
+                                    <span>28 Jul 2026</span>
+
+                                </div>
+
+                            </div>
+
+                            <div class="project-card">
+
+                                <div class="project-top">
+
+                                    <h4>Security Enhancement</h4>
+
+                                    <span>91%</span>
+
+                                </div>
+
+                                <div class="progress-bar">
+
+                                    <div class="progress" style="width:91%;"></div>
+
+                                </div>
+
+                                <div class="project-footer">
+
+                                    <span>Manager : John Smith</span>
+
+                                    <span>08 Aug 2026</span>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </section>
+            </section>
+            <section id="documentsPage" class="page">
+
+                <div class="notification-card">
+
+                    <div class="card-head">
+
+                        <h3>Billing Overview</h3>
+
+                    </div>
+
+                    <div class="billing-card">
+
+                        <h2>$249</h2>
+
+                        <span>Enterprise Plan</span>
+
+                        <p>
+                            Next billing date
+                        </p>
+
+                        <strong>14 Aug 2026</strong>
+
+                    </div>
+
+                    <div class="billing-info">
+
+                        <div>
+
+                            <span>Storage Used</span>
+
+                            <strong>3.8 TB</strong>
+
+                        </div>
+
+                        <div>
+
+                            <span>Bandwidth</span>
+
+                            <strong>12.5 TB</strong>
+
+                        </div>
+
+                        <div>
+
+                            <span>Support</span>
+
+                            <strong>24 / 7 Premium</strong>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <section class="dashboard-row">
+
+                    <div class="chart-card">
+
+                        <div class="card-head">
+
+                            <h3>Resource Usage</h3>
+
+                            <button onclick="window.location.href='404page.html'" class="primary-btn">Live</button>
+
+                        </div>
+
+                        <div class="usage-grid">
+
+                            <div class="usage-card">
+
+                                <i class="fa-solid fa-microchip"></i>
+
+                                <h4>CPU Usage</h4>
+
+                                <h2>42%</h2>
+
+                            </div>
+
+                            <div class="usage-card">
+
+                                <i class="fa-solid fa-memory"></i>
+
+                                <h4>Memory</h4>
+
+                                <h2>68%</h2>
+
+                            </div>
+
+                            <div class="usage-card">
+
+                                <i class="fa-solid fa-hard-drive"></i>
+
+                                <h4>Storage</h4>
+
+                                <h2>76%</h2>
+
+                            </div>
+
+                            <div class="usage-card">
+
+                                <i class="fa-solid fa-network-wired"></i>
+
+                                <h4>Network</h4>
+
+                                <h2>31%</h2>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </section>
+                <section class="dashboard-row">
+
+                    <div class="table-card">
+
+                        <div class="card-head">
+
+                            <h3>Recent Documents</h3>
+
+                            <a href="404page.html">View All</a>
+
+                        </div>
+
+                        <table>
+
+                            <thead>
+
+                                <tr>
+
+                                    <th>Document</th>
+                                    <th>Category</th>
+                                    <th>Date</th>
+                                    <th>Action</th>
+
+                                </tr>
+
+                            </thead>
+
+                            <tbody>
+
+                                <tr>
+
+                                    <td>Infrastructure Report.pdf</td>
+                                    <td>Reports</td>
+                                    <td>08 Jul 2026</td>
+                                    <td>
+                                        <button onclick="window.location.href='404page.html'" class="table-btn">
+                                            Download
+                                        </button>
+                                    </td>
+
+                                </tr>
+
+                                <tr>
+
+                                    <td>Cloud Backup Log.pdf</td>
+                                    <td>Backup</td>
+                                    <td>05 Jul 2026</td>
+                                    <td>
+                                        <button onclick="window.location.href='404page.html'" class="table-btn">
+                                            Download
+                                        </button>
+                                    </td>
+
+                                </tr>
+
+                                <tr>
+
+                                    <td>Security Audit.pdf</td>
+                                    <td>Security</td>
+                                    <td>01 Jul 2026</td>
+                                    <td>
+                                        <button onclick="window.location.href='404page.html'" class="table-btn">
+                                            Download
+                                        </button>
+                                    </td>
+
+                                </tr>
+
+                            </tbody>
+
+                        </table>
+
+                    </div>
+                </section>
+            </section>
+
+            <section id="supportPage" class="page">
+                <div class="notification-card">
+
+                    <div class="card-head">
+
+                        <h3>Support Tickets</h3>
+
+                    </div>
+
+                    <div class="notification">
+
+                        <i class="fa-solid fa-headset"></i>
+
+                        <div>
+
+                            <h5>Infrastructure Upgrade</h5>
+
+                            <span>
+                                Ticket is currently under review.
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                    <div class="notification">
+
+                        <i class="fa-solid fa-circle-check"></i>
+
+                        <div>
+
+                            <h5>Cloud Migration</h5>
+
+                            <span>
+                                Successfully completed.
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                    <div class="notification">
+
+                        <i class="fa-solid fa-comments"></i>
+
+                        <div>
+
+                            <h5>Support Chat</h5>
+
+                            <span>
+                                Last reply received 20 minutes ago.
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+            <section id="notificationsPage" class="page">
+
+                <section class="dashboard-row">
+
+                    <div class="chart-card">
+
+                        <div class="card-head">
+
+                            <h3>Latest Notifications</h3>
+
+                        </div>
+
+                        <div class="notification-list">
+
+                            <div class="notification">
+
+                                <i class="fa-solid fa-circle-check"></i>
+
+                                <div>
+
+                                    <h5>Backup Completed</h5>
+
+                                    <span>
+                                        Daily cloud backup completed successfully.
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+                            <div class="notification">
+
+                                <i class="fa-solid fa-shield-halved"></i>
+
+                                <div>
+
+                                    <h5>Security Update</h5>
+
+                                    <span>
+                                        Firewall rules updated automatically.
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+                            <div class="notification">
+
+                                <i class="fa-solid fa-file-invoice-dollar"></i>
+
+                                <div>
+
+                                    <h5>Invoice Generated</h5>
+
+                                    <span>
+                                        Your monthly invoice is now available.
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+                            <div class="notification">
+
+                                <i class="fa-solid fa-server"></i>
+
+                                <div>
+
+                                    <h5>Server Restart</h5>
+
+                                    <span>
+                                        Scheduled maintenance completed.
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </section>
+            </section>
+            <section id="profilePage" class="page">
+
+                <section class="dashboard-row">
+
+                    <div class="chart-card">
+
+                        <div class="card-head">
+
+                            <h3>Profile Summary</h3>
+
+                        </div>
+
+                        <div class="profile-summary">
+
+                            <img src="./assets/avatar.webp" alt="Client">
+
+                            <div>
+
+                                <h3>John Anderson</h3>
+
+                                <p>Enterprise Client</p>
+
+                                <span>
+                                    Member since 2023
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Upcoming -->
+
+                    <div class="notification-card">
+
+                        <div class="card-head">
+
+                            <h3>Upcoming Activities</h3>
+
+                        </div>
+
+                        <div class="notification">
+
+                            <i class="fa-solid fa-calendar-days"></i>
+
+                            <div>
+
+                                <h5>Infrastructure Review</h5>
+
+                                <span>15 Jul 2026</span>
+
+                            </div>
+
+                        </div>
+
+                        <div class="notification">
+
+                            <i class="fa-solid fa-cloud-arrow-up"></i>
+
+                            <div>
+
+                                <h5>Cloud Maintenance</h5>
+
+                                <span>22 Jul 2026</span>
+
+                            </div>
+
+                        </div>
+
+                        <div class="notification">
+
+                            <i class="fa-solid fa-credit-card"></i>
+
+                            <div>
+
+                                <h5>Subscription Renewal</h5>
+
+                                <span>14 Aug 2026</span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </section>
+            </section>
+
+            </section>
+
+        </main>
+
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+    <script src="client-dashboard.js"></script>
+
+</body>
+
+</html>

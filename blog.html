@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technology & SaaS | Home</title>
+    <link rel="stylesheet" href="shared.css">
+    <link rel="stylesheet" href="blog.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+
+<body>
+    <header>
+        <div class="header-cls">
+            <a href="index.html">
+                <img src="./assets/stackly-logo.webp" alt="Logo" loading="lazy" class="logo">
+            </a>
+            <div class="menu-items">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="services.html">Services</a>
+                <a href="blog.html" class="nav-active">Blog</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="nav-btns">
+                <a href="login.html" class="login-btn">Login</a>
+                <a href="contact.html" class="btn btn-primary">Get in Touch</a>
+            </div>
+            <button class="menu-toggle">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </header>
+    <section class="inner-page-hero">
+
+        <div class="hero-bg-wrapper">
+            <div class="hero-overlay"></div>
+            <img src="./assets/sub-hero.webp" alt="Stackly Office" class="hero-bg-img" loading="eager">
+        </div>
+
+        <div class="container hero-content-wrapper">
+
+            <nav class="breadcrumbs" aria-label="breadcrumb">
+                <ol>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="separator"><span class="material-symbols-rounded">chevron_right</span></li>
+                    <li class="current" aria-current="page">Blog</li>
+                </ol>
+            </nav>
+
+            <div class="inner-hero-text">
+                <h1>Engineering Insights</h1>
+                <p>Deep dives into distributed systems, edge computing, and the technical challenges of building
+                    infrastructure at a global scale.</p>
+
+                <div class="hero-actions">
+                    <a href="#latest" class="btn btn-primary">Read Latest Post</a>
+                    <a href="#subscribe" class="btn btn-outline-light">Subscribe to Newsletter</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section class="featured-article-section section-pad bg-light-gray">
+        <div class="container">
+
+            <div class="section-label mb-4">
+                <span class="label-text">Featured Release</span>
+                <div class="label-line"></div>
+            </div>
+
+            <div class="featured-card shadow-lg">
+
+                <div class="featured-image-wrapper">
+                    <div class="image-overlay"></div>
+                    <img src="./assets/blog1.webp" alt="Global Routing Architecture" class="featured-img"
+                        loading="lazy">
+
+                    <div class="category-badge">Engineering</div>
+                </div>
+
+                <div class="featured-content">
+                    <div class="article-meta mb-3">
+                        <span class="date">July 9, 2026</span>
+                        <span class="dot-separator">•</span>
+                        <span class="read-time">8 min read</span>
+                    </div>
+
+                    <h2 class="article-title">
+                        <a href="single-post.html">Introducing Stackly Edge v2.0: Sub-10ms Global Routing</a>
+                    </h2>
+
+                    <p class="article-excerpt">
+                        We have completely re-engineered our global traffic routing layer. Dive deep into how our new
+                        Anycast architecture reduces cold starts by 80% and guarantees single-digit millisecond latency
+                        across 300+ global Points of Presence.
+                    </p>
+
+                    <div class="featured-footer mt-4">
+                        <div class="author-info">
+                            <img src="./assets/team3.webp" alt="Alex Beaton" class="author-avatar">
+                            <div class="author-details">
+                                <span class="author-name">Alex Beaton</span>
+                                <span class="author-role">Head of Infrastructure</span>
+                            </div>
+                        </div>
+
+                        <a href="single-post.html" class="read-more-link">
+                            Read Full Article <span class="material-symbols-rounded">arrow_forward</span>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- ==================== MAIN ARTICLE GRID ==================== -->
+    <section class="article-grid-section section-pad bg-light-gray" id="articles">
+        <div class="container">
+
+            <!-- Category Filter -->
+            <div class="article-filters mb-5">
+                <button class="filter-btn active" data-filter="all">All Articles</button>
+                <button class="filter-btn" data-filter="engineering">Engineering</button>
+                <button class="filter-btn" data-filter="mobile">Mobile</button>
+                <button class="filter-btn" data-filter="product">Product Updates</button>
+            </div>
+
+            <!-- The Grid -->
+            <div class="article-grid">
+
+                <!-- Article 1 -->
+                <article class="article-card shadow-sm" data-category="mobile">
+                    <div class="card-image-wrapper">
+                        <img src="./assets/blog2.webp" alt="Abstract mobile architecture" loading="lazy">
+                        <div class="hover-scanner"></div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-meta">
+                            <span class="badge badge-cyan">Mobile</span>
+                            <span class="mono-date">07.02.2026</span>
+                        </div>
+                        <h3 class="card-title">
+                            <a href="404page.html">Optimizing Flutter Applications for Global Edge Delivery</a>
+                        </h3>
+                        <p class="card-excerpt">A deep dive into compiling native mobile application assets and syncing
+                            state across our distributed network with zero latency.</p>
+                        <div class="card-author">
+                            <div class="author-initial bg-dark">A</div>
+                            <span class="author-name">Alex Beaton</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Article 2 -->
+                <article class="article-card shadow-sm" data-category="engineering">
+                    <div class="card-image-wrapper">
+                        <img src="./assets/blog3.webp" alt="Abstract data blocks" loading="lazy">
+                        <div class="hover-scanner"></div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-meta">
+                            <span class="badge badge-orange">Engineering</span>
+                            <span class="mono-date">06.28.2026</span>
+                        </div>
+                        <h3 class="card-title">
+                            <a href="404page.html">Automated RDBMS Normalization at Scale</a>
+                        </h3>
+                        <p class="card-excerpt">How we handle rigorous validation testing and automated system
+                            maintenance for enterprise relational ecosystems.</p>
+                        <div class="card-author">
+                            <div class="author-initial bg-dark">S</div>
+                            <span class="author-name">Sarah Jenkins</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Article 3 -->
+                <article class="article-card shadow-sm" data-category="product">
+                    <div class="card-image-wrapper">
+                        <img src="./assets/blog4.webp" alt="Abstract security shield" loading="lazy">
+                        <div class="hover-scanner"></div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-meta">
+                            <span class="badge badge-purple">Product</span>
+                            <span class="mono-date">06.15.2026</span>
+                        </div>
+                        <h3 class="card-title">
+                            <a href="404page.html">SOC2 Compliance Vault Now Generally Available</a>
+                        </h3>
+                        <p class="card-excerpt">Implement granular RBAC, centralized SSO, and automated audit logging
+                            directly through the developer API.</p>
+                        <div class="card-author">
+                            <div class="author-initial bg-dark">E</div>
+                            <span class="author-name">Elena Rodriguez</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Article 4 -->
+                <article class="article-card shadow-sm" data-category="engineering">
+                    <div class="card-image-wrapper">
+                        <img src="./assets/blog5.webp" alt="Abstract interconnected nodes" loading="lazy">
+                        <div class="hover-scanner"></div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-meta">
+                            <span class="badge badge-orange">Engineering</span>
+                            <span class="mono-date">05.22.2026</span>
+                        </div>
+                        <h3 class="card-title">
+                            <a href="404page.html">Migrating from Monolith to Edge Microservices</a>
+                        </h3>
+                        <p class="card-excerpt">A step-by-step architectural guide to decoupling legacy systems and
+                            deploying to the edge without experiencing deployment downtime.</p>
+                        <div class="card-author">
+                            <div class="author-initial bg-dark">A</div>
+                            <span class="author-name">Alex Beaton</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Article 5 -->
+                <article class="article-card shadow-sm" data-category="product">
+                    <div class="card-image-wrapper">
+                        <img src="./assets/blog6.webp" alt="Abstract data visualization" loading="lazy">
+                        <div class="hover-scanner"></div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-meta">
+                            <span class="badge badge-purple">Product</span>
+                            <span class="mono-date">05.10.2026</span>
+                        </div>
+                        <h3 class="card-title">
+                            <a href="404page.html">Introducing the Stackly Analytics API</a>
+                        </h3>
+                        <p class="card-excerpt">Query your infrastructure logs and performance metrics in real-time with
+                            our
+                            brand-new, highly optimized GraphQL endpoint.</p>
+                        <div class="card-author">
+                            <div class="author-initial bg-dark">M</div>
+                            <span class="author-name">Marcus Reed</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Article 6 -->
+                <article class="article-card shadow-sm" data-category="mobile">
+                    <div class="card-image-wrapper">
+                        <img src="./assets/blog7.webp" alt="Abstract mobile device layers" loading="lazy">
+                        <div class="hover-scanner"></div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-meta">
+                            <span class="badge badge-cyan">Mobile</span>
+                            <span class="mono-date">04.28.2026</span>
+                        </div>
+                        <h3 class="card-title">
+                            <a href="404page.html">Offline-First Architectures with Edge Sync</a>
+                        </h3>
+                        <p class="card-excerpt">How to design mobile applications that gracefully handle complete
+                            network
+                            drops while maintaining rigorous data consistency.</p>
+                        <div class="card-author">
+                            <div class="author-initial bg-dark">E</div>
+                            <span class="author-name">Elena Rodriguez</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Article 7 -->
+                <article class="article-card shadow-sm" data-category="engineering">
+                    <div class="card-image-wrapper">
+                        <img src="./assets/blog8.webp" alt="Abstract network grid" loading="lazy">
+                        <div class="hover-scanner"></div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-meta">
+                            <span class="badge badge-orange">Engineering</span>
+                            <span class="mono-date">04.14.2026</span>
+                        </div>
+                        <h3 class="card-title">
+                            <a href="404page.html">Understanding Anycast Routing</a>
+                        </h3>
+                        <p class="card-excerpt">The networking magic and physical hardware distribution behind our
+                            sub-10ms
+                            global latency guarantee explained in detail.</p>
+                        <div class="card-author">
+                            <div class="author-initial bg-dark">S</div>
+                            <span class="author-name">Sarah Jenkins</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Article 8 -->
+                <article class="article-card shadow-sm" data-category="product">
+                    <div class="card-image-wrapper">
+                        <img src="./assets/blog9.webp" alt="Abstract terminal window" loading="lazy">
+                        <div class="hover-scanner"></div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-meta">
+                            <span class="badge badge-purple">Product</span>
+                            <span class="mono-date">03.30.2026</span>
+                        </div>
+                        <h3 class="card-title">
+                            <a href="404page.html">Stackly CLI v3.0 is Officially Here</a>
+                        </h3>
+                        <p class="card-excerpt">Experience faster local deployments, a highly interactive terminal UI,
+                            and
+                            built-in CI/CD pipeline scaffolding.</p>
+                        <div class="card-author">
+                            <div class="author-initial bg-dark">M</div>
+                            <span class="author-name">Marcus Reed</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Article 9 -->
+                <article class="article-card shadow-sm" data-category="engineering">
+                    <div class="card-image-wrapper">
+                        <img src="./assets/blog10.webp" alt="Abstract database servers" loading="lazy">
+                        <div class="hover-scanner"></div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-meta">
+                            <span class="badge badge-orange">Engineering</span>
+                            <span class="mono-date">03.12.2026</span>
+                        </div>
+                        <h3 class="card-title">
+                            <a href="404page.html">Zero-Downtime Database Migrations</a>
+                        </h3>
+                        <p class="card-excerpt">Battle-tested strategies for evolving your relational schemas while
+                            safely
+                            serving thousands of concurrent user requests.</p>
+                        <div class="card-author">
+                            <div class="author-initial bg-dark">S</div>
+                            <span class="author-name">Sarah Jenkins</span>
+                        </div>
+                    </div>
+                </article>
+                <!-- Load More Button -->
+                <div class="text-center mt-5">
+                    <button class="btn btn-outline-dark load-more-btn">Load More Articles</button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- ==================== STANDALONE NEWSLETTER SECTION ==================== -->
+    <section class="newsletter-section section-pad dark-section mt-5">
+        <div class="container">
+            <div class="newsletter-trap shadow-lg">
+
+                <!-- Decorative Glow Orbs -->
+                <div class="glow-orb orb-cyan"></div>
+                <div class="glow-orb orb-orange"></div>
+
+                <!-- Content Left -->
+                <div class="trap-content">
+                    <span class="trap-badge">Stay Ahead</span>
+                    <h3>Architecture insights, delivered weekly.</h3>
+                    <p>Join 15,000+ engineers receiving our latest routing optimizations, release notes, and deep-dives
+                        into high-performance Flutter mobile architecture.</p>
+                </div>
+
+                <!-- Form Right -->
+                <div class="trap-form-container">
+                    <form id="newsletterForm" class="trap-form" novalidate>
+                        <div class="input-group" id="inputGroup">
+                            <span class="material-symbols-rounded input-icon">mail</span>
+                            <input type="email" id="emailInput" placeholder="developer@company.com" required
+                                autocomplete="email">
+                            <button type="submit" class="btn btn-primary btn-submit" id="submitBtn">
+                                <span class="btn-text">Subscribe</span>
+                            </button>
+                        </div>
+                        <!-- Validation Message Container -->
+                        <div class="validation-message" id="valMessage"></div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section class="cta-section section-pad">
+        <div class="container">
+            <div class="cta-premium-wrapper">
+                <div class="cta-glow-bg"></div>
+
+                <div class="cta-content-centered text-center">
+                    <h2 class="cta-headline">Ready to build something real?</h2>
+                    <p class="cta-subhead">Join top engineering teams building the future with Stackly's precision
+                        infrastructure. Let's talk about what's possible.</p>
+
+                    <div class="cta-action-group flex-center">
+                        <a href="404page.html" class="btn btn-primary btn-large">Start Building for Free</a>
+                        <a href="404page.html" class="btn btn-outline-dark">Talk to Sales</a>
+                    </div>
+
+                    <p class="cta-microcopy">
+                        <span class="material-symbols-rounded">check</span> 14-day free trial. No credit card required.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="site-footer section-pad">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col brand-col">
+                    <div class="footer-logo">
+                        <img src="./assets/stackly-logo.webp" alt="Stackly Logo" class="logo" loading="lazy">
+                    </div>
+
+                    <p class="footer-desc">
+                        Stackly empowers engineering teams with scalable, high-performance infrastructure. Built for
+                        precision. Engineered for the future.
+                    </p>
+
+                    <div class="social-icons">
+                        <a href="404page.html" aria-label="X (Twitter)" class="social-link">
+                            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                                <path
+                                    d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 22.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                            </svg>
+                        </a>
+
+                        <a href="404page.html" aria-label="GitHub" class="social-link">
+                            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                                <path
+                                    d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" />
+                            </svg>
+                        </a>
+
+                        <a href="404page.html" aria-label="LinkedIn" class="social-link">
+                            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                                <path
+                                    d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+
+
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="404page.html">UI/UX design</a></li>
+                        <li><a href="404page.html">Web development</a></li>
+                        <li><a href="404page.html">Mobile apps</a></li>
+                        <li><a href="404page.html">Digital marketing</a></li>
+                        <li><a href="404page.html">AI & automation</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col newsletter-col">
+                    <p class="footer-desc">Get insights on technology trends and project updates delivered monthly.</p>
+                    <form class="newsletter-form">
+
+                        <input type="email" id="newsletterEmail" placeholder="Your email">
+
+                        <button type="submit">
+
+                            Subscribe
+
+                        </button>
+
+                    </form>
+
+                    <small class="newsletter-error"></small>
+
+                    <span class="privacy-text">We respect your inbox. Read our privacy policy to understand how we
+                        handle your data.</span>
+                </div>
+
+            </div>
+            <div class="footer-bottom">
+                <div class="copyright">
+                    &copy; 2026 Stackly. All rights reserved.
+                </div>
+                <div class="footer-legal">
+                    <a href="404page.html">Privacy Policy</a>
+                    <a href="404page.html">Terms of Service</a>
+                    <a href="404page.html">Cookie Settings</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+        // Ensure GSAP and ScrollTrigger are loaded
+
+        const featuredPostTimeline = gsap.timeline({
+            scrollTrigger: {
+                trigger: ".featured-article-section",
+                start: "top 80%", // Starts when the top of the section is at 80% of the viewport height
+                toggleActions: "play none none reverse"
+            }
+        });
+
+        featuredPostTimeline
+            // Reveal the subtle label line first
+            .from(".section-label", {
+                opacity: 0,
+                x: -20,
+                duration: 0.6,
+                ease: "power2.out"
+            })
+            // Slide the main card up
+            .from(".featured-card", {
+                y: 60,
+                opacity: 0,
+                duration: 1,
+                ease: "power3.out"
+            }, "-=0.4")
+            // Zoom out the image slightly for a cinematic reveal
+            .from(".featured-img", {
+                scale: 1.15,
+                duration: 1.5,
+                ease: "power2.out"
+            }, "-=1");
+
+        // 1. Initial Scroll Reveal for the Grid
+        gsap.from(".article-card", {
+            scrollTrigger: {
+                trigger: ".article-grid-section",
+                start: "top 80%",
+            },
+            y: 40,
+            opacity: 0,
+            duration: 0.8,
+            stagger: 0.1,
+            ease: "power2.out"
+        });
+
+        // 2. Filter Button Logic
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const articles = document.querySelectorAll('.article-card');
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                // Remove active class from all buttons
+                filterBtns.forEach(b => b.classList.remove('active'));
+                // Add active class to clicked button
+                btn.classList.add('active');
+
+                const filterValue = btn.getAttribute('data-filter');
+
+                // Create a GSAP timeline for smooth filtering
+                const filterTimeline = gsap.timeline();
+
+                // Step 1: Fade out all articles
+                filterTimeline.to(articles, {
+                    opacity: 0,
+                    scale: 0.95,
+                    duration: 0.3,
+                    ease: "power2.inOut",
+                    onComplete: () => {
+                        // Step 2: Hide/Show based on category while invisible
+                        articles.forEach(article => {
+                            if (filterValue === 'all' || article.getAttribute('data-category') === filterValue) {
+                                article.style.display = 'flex';
+                            } else {
+                                article.style.display = 'none';
+                            }
+                        });
+                    }
+                })
+                    // Step 3: Fade back in the visible articles
+                    .to(articles, {
+                        opacity: 1,
+                        scale: 1,
+                        duration: 0.4,
+                        stagger: 0.05,
+                        ease: "power2.out"
+                    });
+            });
+        });
+
+        // Ensure GSAP is loaded in your project
+
+        const form = document.getElementById('newsletterForm');
+        const emailInput = document.getElementById('emailInput');
+        const inputGroup = document.getElementById('inputGroup');
+        const valMessage = document.getElementById('valMessage');
+        const submitBtn = document.getElementById('submitBtn');
+        const btnText = submitBtn.querySelector('.btn-text');
+
+        // Regex for standard email validation
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+        form.addEventListener('submit', (e) => {
+            e.preventDefault(); // Prevent page reload
+
+            const emailValue = emailInput.value.trim();
+
+            // Reset classes
+            inputGroup.classList.remove('error-state');
+            valMessage.classList.remove('error-text', 'success-text');
+
+            // 1. Validation Check: Is it empty?
+            if (emailValue === '') {
+                showError('Please enter an email address.');
+                return;
+            }
+
+            // 2. Validation Check: Is it a valid format?
+            if (!emailRegex.test(emailValue)) {
+                showError('Please enter a valid corporate email address.');
+                return;
+            }
+
+            // 3. Success State (Simulating an API call)
+            showLoadingState();
+
+            // Simulate network delay (1.5 seconds)
+            setTimeout(() => {
+                showSuccess('Subscription successful! Check your inbox.');
+            }, 1500);
+        });
+
+        // Function to handle Error State
+        function showError(message) {
+            inputGroup.classList.add('error-state');
+            valMessage.textContent = message;
+            valMessage.classList.add('error-text');
+
+            // GSAP Shake Animation for physical feedback
+            gsap.fromTo(inputGroup,
+                { x: -5 },
+                { x: 5, duration: 0.05, yoyo: true, repeat: 5, clearProps: "x" }
+            );
+        }
+
+        // Function to handle Loading State
+        function showLoadingState() {
+            btnText.textContent = 'Submitting...';
+            submitBtn.style.opacity = '0.8';
+            submitBtn.style.pointerEvents = 'none'; // Prevent double clicks
+            emailInput.disabled = true;
+        }
+
+        // Function to handle Success State
+        function showSuccess(message) {
+            // Re-enable input for future use
+            submitBtn.style.opacity = '1';
+            emailInput.disabled = false;
+
+            // Update UI
+            btnText.textContent = 'Subscribed!';
+            submitBtn.classList.remove('btn-cyan');
+            submitBtn.style.backgroundColor = '#00E5FF'; // Force cyan success color
+            submitBtn.style.color = '#050505';
+
+            valMessage.textContent = message;
+            valMessage.classList.add('success-text');
+
+            // GSAP smooth fade in for success message
+            gsap.from(valMessage, {
+                y: 10,
+                opacity: 0,
+                duration: 0.4,
+                ease: "power2.out"
+            });
+
+            // Clear input
+            emailInput.value = '';
+
+            // Optional: Reset button text after 4 seconds
+            setTimeout(() => {
+                btnText.textContent = 'Subscribe';
+                valMessage.classList.remove('success-text');
+                valMessage.textContent = '';
+                submitBtn.style.pointerEvents = 'auto';
+            }, 4000);
+        }
+    </script>
+</body>
+
+</html>
